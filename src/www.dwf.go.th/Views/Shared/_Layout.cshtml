@@ -410,18 +410,20 @@
                         <i style="font-size:20px;">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์</i>
                     </h2>
                     <div class="da-img">
-                        @{
-                            //เพื่อสามารถบริหารจัดการได้ง่าย
-                            string width = "530";
-                            string height = "300";
-                            string attribute = "https://www.youtube.com/embed/oyEuk8j8imI?rel=0&amp;controls=0&amp;showinfo=0&autoplay=1";
-                        }
-                        <iframe width="@width" height="@height" src="@attribute" frameborder="0" allowfullscreen></iframe>
+                        <img src="~/assets/img/avata-youtube.jpg" width="530" height="300" alt="" title="สค.">
                     </div>
                 </div>
                 <div class="da-slide">
                     <h2><i>สือความหมาย</i> <br /> <i>สร้างความรูป</i> <br /> <i>สู่ความเข้าใจ</i></h2>
-                    <div class="da-img"><img class="img-responsive" src="~/assets/plugins/parallax-slider/img/1.png" alt=""></div>
+                    <div class="da-img">
+                        @{
+                            //เพื่อสามารถบริหารจัดการได้ง่าย
+                            string width = "530";
+                            string height = "300";
+                            string attribute = "https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;controls=0&autoplay=0";
+                        }
+                        <iframe width="@width" height="@height" src="@attribute" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <!-----<div class="da-slide">
                     <h2><i>USING BEST WEB</i> <br /> <i>SOLUTIONS WITH</i> <br /> <i>HTML5/CSS3</i></h2>
@@ -590,6 +592,8 @@
 			StyleSwitcher.initStyleSwitcher();
 			ParallaxSlider.initParallaxSlider();
 		});
+
+
     </script>
     <script src="~/assets/plugins/respond.js"></script>
     <script src="~/assets/plugins/html5shiv.js"></script>
