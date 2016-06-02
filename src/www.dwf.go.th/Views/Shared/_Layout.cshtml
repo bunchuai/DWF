@@ -7,7 +7,7 @@
 <head>
     <title>@ViewData["Title"]</title>
     <!-- Meta -->
-    <base href="@Url.Content("~")">
+    <base href="@Url.Content("~/")">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="กรมกิจการสตรีและสถาบันครอบครัว">
@@ -59,7 +59,9 @@
                             </ul>
                         </li>
                         <li class="topbar-devider"></li>
-                        <li class="icon-settings"> <a href="page_faq.html">ช่วยเหลือ</a></li>
+                        <li class="icon-settings"> <a href="javascript:void(0)"> ร้องทุกข์ร้องเรียน</a></li>
+                        <li class="topbar-devider"></li>
+                        <li class="icon-settings"> <a href="javascript:void(0)"> ช่วยเหลือ</a></li>
                         <li class="topbar-devider"></li>
                         <li class="icon-user"> <a href="@Url.Content("~/Home/Intralogin")" target="_blank"> อินทราเน็ต</a></li>
                     </ul>
@@ -77,19 +79,19 @@
                 <div class="container">
                     <ul class="nav navbar-nav">
                         <!-- Home -->
-                        <li class="dropdown active">
-                            <a href="@Url.Content("~")">
+                        <li class="active">
+                            <a href="@Url.Content("~/")">
                                 หน้าแรก
                             </a>
                         <li class="dropdown">
-                            <a href="@Url.Content("~")" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                 ประกาศ
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- About Pages -->
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> จัดซื้อจัดจ้าง</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> สมัครงาน</a>
+                                <li>
+                                    <a href="@Url.Content("~/announce/purchase/purchase")"><i class="fa fa-dot-circle-o"></i> จัดซื้อจัดจ้าง</a>
+                                    <a href="@Url.Content("~/announce")"><i class="fa fa-dot-circle-o"></i> สมัครงาน</a>
                                     <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> ทั่วไป</a>
                                     <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> นิติการ</a>
                                     <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> ประกาศราคากลาง สค.</a>
@@ -113,75 +115,62 @@
                                                     <ul class="list-unstyled equal-height-list">
                                                         <li><h3>เกี่ยวกับ &amp; สค.</h3></li>
                                                         <!-- Typography -->
-                                                        <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i> เกี่ยวกับ สค.</a></li>
-                                                        <li><a href="shortcode_typo_headings.html"><i class="fa fa-magic"></i> พระบรมราโชวาท</a></li>
-                                                        <li><a href="shortcode_typo_dividers.html"><i class="fa fa-ellipsis-h"></i> สารจากนายกรัฐมนตรี</a></li>
-                                                        <li><a href="shortcode_typo_blockquote.html"><i class="fa fa-quote-left"></i> ประวัติความเป็นมา</a></li>
-                                                        <li><a href="shortcode_typo_boxshadows.html"><i class="fa fa-asterisk"></i> วิสัยทัศน์ พันธกิจหลัก</a></li>
-                                                        <li><a href="shortcode_typo_testimonials.html"><i class="fa fa-comments"></i> ภารกิจหน้าที่</a></li>
-                                                        <li><a href="shortcode_typo_tagline_boxes.html"><i class="fa fa-tasks"></i> ทำเนียบกรม</a></li>
-                                                        <li><a href="shortcode_typo_grid.html"><i class="fa fa-align-justify"></i> ทำเนียบผู้อำนวยการ</a></li>
-                                                        <!-- End Typography -->
-                                                        <!-- Components -->
-                                                        <li><a href="shortcode_compo_messages.html"><i class="fa fa-comment"></i> ผู้บริหารฝ่ายการเมือง พม.</a></li>
-                                                        <li><a href="shortcode_compo_labels.html"><i class="fa fa-tags"></i> ผู้บริหารฝ่ายข้าราชการประจำ พม.</a></li>
-                                                        <li><a href="shortcode_compo_media.html"><i class="fa fa-volume-down"></i> ผู้บริหาร</a></li>
-                                                        <li><a href="shortcode_compo_pagination.html"><i class="fa fa-arrows-h"></i> โครงสร้าง และ อัตรากำลัง</a></li>
-                                                        <li><a href="shortcode_compo_labels.html"><i class="fa fa-tags"></i> คำรับรองการปฏิบัติราชการ</a></li>
-                                                        <li><a href="shortcode_compo_media.html"><i class="fa fa-volume-down"></i> ค่านิยมองค์กร</a></li>
-                                                        <li><a href="shortcode_compo_pagination.html"><i class="fa fa-arrows-h"></i> คณะกรรมการ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> เกี่ยวกับ สค.</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> พระบรมราโชวาท</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สารจากนายกรัฐมนตรี</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ประวัติความเป็นมา</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> วิสัยทัศน์ พันธกิจหลัก</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ภารกิจหน้าที่</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทำเนียบกรม</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทำเนียบผู้อำนวยการ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารฝ่ายการเมือง พม.</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารฝ่ายข้าราชการประจำ พม.</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหาร</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> โครงสร้าง และ อัตรากำลัง</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คำรับรองการปฏิบัติราชการ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ค่านิยมองค์กร</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คณะกรรมการ</a></li>
                                                         <!-- End Components -->
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-3 equal-height-in">
                                                     <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>Buttons &amp; Icons</h3></li>
-                                                        <!-- Buttons -->
-                                                        <li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i> General Buttons</a></li>
-                                                        <li><a href="shortcode_btn_brands.html"><i class="fa fa-html5"></i> Brand &amp; Social Buttons</a></li>
-                                                        <li><a href="shortcode_btn_effects.html"><i class="fa fa-bolt"></i> Loading &amp; Hover Effects</a></li>
-                                                        <!-- End Buttons -->
-                                                        <!-- Icons -->
-                                                        <li><a href="shortcode_icon_general.html"><i class="fa fa-chevron-circle-right"></i> General Icons</a></li>
-                                                        <li><a href="shortcode_icon_fa.html"><i class="fa fa-chevron-circle-right"></i> Font Awesome Icons</a></li>
-                                                        <li><a href="shortcode_icon_line.html"><i class="fa fa-chevron-circle-right"></i> Line Icons</a></li>
-                                                        <li><a href="shortcode_icon_line_christmas.html"><i class="fa fa-chevron-circle-right"></i> Line Icons Pro</a></li>
-                                                        <li><a href="shortcode_icon_glyph.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons Icons (Bootstrap)</a></li>
+                                                        <li><h3>บทความ งานวิจัย คู่มือ และเอกสารเผยแพร่</h3></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> หนังสือ คู่มือ องค์ความรู้</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> งานติดตามและประเมินผล</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> เอกสารเผยแพร่</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> บทความ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> รายงานประจำปี</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> นโยบายและแผน</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> แผ่นพับ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> งานศึกษา วิจัย สำรวจ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สมัชชาสตรีและครอบครัว</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง (CIO) กรม</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คู่มือเบิกจ่ายเงินรูปแบบ Electronic</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สถิติข้อมูล สารสนเทศ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คู่มือ แนวทางดำเนินงาน</a></li>
                                                         <!-- End Icons -->
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-3 equal-height-in">
                                                     <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>Common elements</h3></li>
-                                                        <!-- Common Elements -->
-                                                        <li><a href="shortcode_thumbnails.html"><i class="fa fa-image"></i> Thumbnails</a></li>
-                                                        <li><a href="shortcode_accordion_and_tabs.html"><i class="fa fa-list-ol"></i> Accordion &amp; Tabs</a></li>
-                                                        <li><a href="shortcode_timeline1.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 1</a></li>
-                                                        <li><a href="shortcode_timeline2.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 2</a></li>
-                                                        <li><a href="shortcode_table_general.html"><i class="fa fa-table"></i> Tables</a></li>
-                                                        <li><a href="shortcode_compo_progress_bars.html"><i class="fa fa-align-left"></i> Progress Bars</a></li>
-                                                        <li><a href="shortcode_compo_panels.html"><i class="fa fa-columns"></i> Panels</a></li>
-                                                        <li><a href="shortcode_carousels.html"><i class="fa fa-sliders"></i> Carousel Examples</a></li>
-                                                        <li><a href="shortcode_maps_google.html"><i class="fa fa-map-marker"></i> Google Maps</a></li>
-                                                        <li><a href="shortcode_maps_vector.html"><i class="fa fa-align-center"></i> Vector Maps</a></li>
+                                                        <li><h3>กฎหมาย/คำสั่ง</h3></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> พระราชบัญญัติ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ประกาศ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> กฎ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ระเบียบ</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ข้อบังคับ/กฏบัตร</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> รายงาน,บันทึก</a></li>
                                                         <!-- End Common Elements -->
                                                     </ul>
                                                 </div>
                                                 <div class="col-md-3 equal-height-in">
                                                     <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>Forms &amp; Infographics</h3></li>
-                                                        <!-- Forms -->
-                                                        <li><a href="shortcode_form_general.html"><i class="fa fa-bars"></i> Common Bootstrap Forms</a></li>
-                                                        <li><a href="shortcode_form_general1.html"><i class="fa fa-bars"></i> General Unify Forms</a></li>
-                                                        <li><a href="shortcode_form_advanced.html"><i class="fa fa-bars"></i> Advanced Forms</a></li>
-                                                        <li><a href="shortcode_form_layouts.html"><i class="fa fa-bars"></i> Form Layouts</a></li>
-                                                        <li><a href="shortcode_form_layouts_advanced.html"><i class="fa fa-bars"></i> Advanced Layout Forms</a></li>
-                                                        <li><a href="shortcode_form_states.html"><i class="fa fa-bars"></i> Form States</a></li>
-                                                        <li><a href="shortcode_form_sliders.html"><i class="fa fa-bars"></i> Form Sliders</a></li>
-                                                        <li><a href="shortcode_form_modals.html"><i class="fa fa-bars"></i> Modals</a></li>
-                                                        <!-- End Forms -->
-                                                        <!-- Infographics -->
-                                                        <li><a href="shortcode_compo_charts.html"><i class="fa fa-pie-chart"></i> Charts &amp; Countdowns</a></li>
+                                                        <li><h3>สาระน่ารู้</h3></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ศูนย์ข้อมูลข่าวสาร</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ด้านสตรี</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ด้านครอบครัว</a></li>
+                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทั่วไป</a></li>
                                                         <!-- End Infographics -->
                                                     </ul>
                                                 </div>
@@ -196,7 +185,7 @@
                         <!-- Blog -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Blog
+                                ปฏิทินกิจกรรม
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
@@ -241,7 +230,7 @@
                         <!-- Portfolio -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Portfolio
+                                แหล่งข้อมูลที่น่าสนใจ
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
