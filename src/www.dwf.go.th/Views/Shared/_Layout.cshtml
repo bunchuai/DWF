@@ -27,8 +27,10 @@
     <link rel="stylesheet" href="~/assets/plugins/animate.css">
     <link rel="stylesheet" href="~/assets/plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/assets/plugins/parallax-slider/css/parallax-slider.css">
+    <link rel="stylesheet" href="~/assets/plugins/fancybox/source/jquery.fancybox.css">
     <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
+    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
     <!-- CSS Theme -->
     <link rel="stylesheet" href="~/assets/css/theme-colors/default.css" id="style_color">
     <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css">
@@ -391,43 +393,106 @@
         </div>
         <!--=== End Header ===-->
         <!--=== Slider ===-->
-        <div class="slider-inner">
-            <div id="da-slider" class="da-slider">
-                <div class="da-slide">
-                    <h2>
-                        <i style="font-size:30px;">กรมกิจการสตรีและสถาบันครอบครัว.</i><br />
-                        <i style="font-size:20px;">กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์</i>
-                    </h2>
-                    <div class="da-img">
-                        <img src="~/assets/img/avata-youtube.jpg" width="530" height="300" alt="" title="สค.">
-                    </div>
-                </div>
-                <div class="da-slide">
-                    <h2><i>สือความหมาย</i> <br /> <i>สร้างความรูป</i> <br /> <i>สู่ความเข้าใจ</i></h2>
-                    <div class="da-img">
-                        @{
-                            //เพื่อสามารถบริหารจัดการได้ง่าย
-                            string width = "530";
-                            string height = "300";
-                            string attribute = "https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;controls=0&autoplay=0";
-                        }
-                        <iframe width="@width" height="@height" src="@attribute" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <!-----<div class="da-slide">
-                    <h2><i>USING BEST WEB</i> <br /> <i>SOLUTIONS WITH</i> <br /> <i>HTML5/CSS3</i></h2>
-                    <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
-                    <div class="da-img"><img src="~/assets/plugins/parallax-slider/img/html5andcss3.png" alt="image01" /></div>
-                </div>---->
-                <div class="da-arrows">
-                    <span class="da-arrows-prev"></span>
-                    <span class="da-arrows-next"></span>
-                </div>
+        <div class="tp-banner-container">
+            <div class="tp-banner">
+                <ul>
+                    <!-- SLIDE -->
+                    <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
+                        <!-- MAIN IMAGE -->
+                        <img src="~/assets/img/sliders/slide3.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <div class="tp-caption revolution-ch1 sft start"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="100"
+                             data-speed="1500"
+                             data-start="500"
+                             data-easing="Back.easeInOut"
+                             data-endeasing="Power1.easeIn"
+                             data-endspeed="300">
+                             Department of Women's Affairs And Family Development
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption revolution-ch2 sft"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="190"
+                             data-speed="1400"
+                             data-start="2000"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="off"
+                             style="z-index: 6">
+                             กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์<br />
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption sft"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="310"
+                             data-speed="1600"
+                             data-start="2800"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="off"
+                             style="z-index: 6">
+                        </div>
+                    </li>
+                    <!-- END SLIDE -->
+                    <!-- SLIDE -->
+                    <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+                        <!-- MAIN IMAGE -->
+                        <img src="~/assets/img/sliders/slide2.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                        <div class="tp-caption revolution-ch1 sft start"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="100"
+                             data-speed="1500"
+                             data-start="500"
+                             data-easing="Back.easeInOut"
+                             data-endeasing="Power1.easeIn"
+                             data-endspeed="300">
+                            Includes 300+ Template Pages
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption revolution-ch2 sft"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="190"
+                             data-speed="1400"
+                             data-start="2000"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="off"
+                             style="z-index: 6">
+                            We are creative technology company providing <br />
+                            key digital services on web and mobile.
+                        </div>
+                        <!-- LAYER -->
+                        <div class="tp-caption sft"
+                             data-x="center"
+                             data-hoffset="0"
+                             data-y="310"
+                             data-speed="1600"
+                             data-start="2800"
+                             data-easing="Power4.easeOut"
+                             data-endspeed="300"
+                             data-endeasing="Power1.easeIn"
+                             data-captionhidden="off"
+                             style="z-index: 6">
+                            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
+                            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+                        </div>
+                    </li>
+                    <!-- END SLIDE -->
+                </ul>
+                <div class="tp-bannertimer tp-bottom"></div>
             </div>
         </div>
-        <!--/slider-->
+        <!--=== End Slider ===-->
         <!--- Content --->
-
 
         @RenderBody()
 
@@ -564,22 +629,27 @@
     <!-- JS Implementing Plugins -->
     <script type="text/javascript" src="~/assets/plugins/back-to-top.js"></script>
     <script type="text/javascript" src="~/assets/plugins/smoothScroll.js"></script>
-    <script type="text/javascript" src="~/assets/plugins/parallax-slider/js/modernizr.js"></script>
-    <script type="text/javascript" src="~/assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/jquery.parallax.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <!-- JS Customization -->
     <script type="text/javascript" src="~/assets/js/custom.js"></script>
     <!-- JS Page Level -->
     <script type="text/javascript" src="~/assets/js/app.js"></script>
+    <script type="text/javascript" src="~/assets/js/plugins/fancy-box.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/owl-carousel.js"></script>
+    <script type="text/javascript" src="~/assets/js/plugins/revolution-slider.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/style-switcher.js"></script>
-    <script type="text/javascript" src="~/assets/js/plugins/parallax-slider.js"></script>
     <script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
+			App.initParallaxBg();
+			FancyBox.initFancybox();
 			OwlCarousel.initOwlCarousel();
 			StyleSwitcher.initStyleSwitcher();
-			ParallaxSlider.initParallaxSlider();
+			RevolutionSlider.initRSfullWidth();
 		});
     </script>
     <script src="~/assets/plugins/respond.js"></script>
