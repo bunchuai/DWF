@@ -48,20 +48,20 @@
                 <!-- Topbar -->
                 <div class="topbar">
                     <ul class="loginbar pull-right">
+                        <li class="fa fa-home"><a href="@Url.Content("~/")"> หน้าหลัก</a></liclass="fa>
+                        <li class="topbar-devider"></li>
                         <li class="hoverSelector">
                             <i class="fa fa-globe"></i>
                             <a>ภาษา</a>
                             <ul class="languages hoverSelectorBlock">
-                                <li class="active">
-                                    <a href="#">ไทย <i class="fa fa-check"></i></a>
-                                </li>
+                                <li class="active"><a href="#">ไทย <i class="fa fa-check"></i></a></li>
                                 <li><a href="#">English</a></li>
                             </ul>
                         </li>
                         <li class="topbar-devider"></li>
                         <li class="icon-settings"> <a href="javascript:void(0)"> ร้องทุกข์ร้องเรียน</a></li>
                         <li class="topbar-devider"></li>
-                        <li class="icon-settings"> <a href="javascript:void(0)"> ช่วยเหลือ</a></li>
+                        <li class="icon-settings"> <a href="@Url.Content("~/Home/Help")"> ช่วยเหลือ</a></li>
                         <li class="topbar-devider"></li>
                         <li class="icon-user"> <a href="@Url.Content("~/Home/Intralogin")" target="_blank"> อินทราเน็ต</a></li>
                     </ul>

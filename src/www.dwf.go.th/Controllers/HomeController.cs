@@ -18,11 +18,9 @@ namespace www.dwf.go.th.Controllers
             return View("Intralogin");
         }
 
-        public IActionResult Contact()
+        public IActionResult Help()
         {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            return View("Help");
         }
 
         public IActionResult Error()
