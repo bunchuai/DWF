@@ -50,7 +50,7 @@
                 <!-- Topbar -->
                 <div class="topbar">
                     <ul class="loginbar pull-right">
-                        <li class="fa fa-home"><a href="@Url.Content("~/")"> หน้าหลัก</a></liclass="fa>
+                        <li class="fa fa-home"><a href="@Url.Content("~/")"> หน้าแรก</a></liclass="fa>
                         <li class="topbar-devider"></li>
                         <li class="hoverSelector">
                             <i class="fa fa-globe"></i>
@@ -392,54 +392,51 @@
             </div><!--/navbar-collapse-->
         </div>
         <!--=== End Header ===-->
+
+
         <!--=== Slider ===-->
         <div class="tp-banner-container">
             <div class="tp-banner">
                 <ul>
                     <!-- SLIDE -->
-                    <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/img/sliders/slide3.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <div class="tp-caption revolution-ch1 sft start"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="100"
-                             data-speed="1500"
-                             data-start="500"
-                             data-easing="Back.easeInOut"
-                             data-endeasing="Power1.easeIn"
-                             data-endspeed="300">
-                             Department of Women's Affairs And Family Development
-                        </div>
-                        <!-- LAYER -->
-                        <div class="tp-caption revolution-ch2 sft"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="190"
-                             data-speed="1400"
-                             data-start="2000"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="off"
-                             style="z-index: 6">
-                             กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์<br />
-                        </div>
-                        <!-- LAYER -->
-                        <div class="tp-caption sft"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="310"
-                             data-speed="1600"
-                             data-start="2800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="off"
-                             style="z-index: 6">
-                        </div>
-                    </li>
-                    <!-- END SLIDE -->
+                    @{
+                        for (int s = 1; s <= 1; s++)
+                        {
+                            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
+                                <!-- MAIN IMAGE -->
+                                <img src="~/assets/img/sliders/slide4.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+                                <div class="tp-caption revolution-ch1 sft start"
+                                     data-x="center"
+                                     data-hoffset="0"
+                                     data-y="100"
+                                     data-speed="1500"
+                                     data-start="500"
+                                     data-easing="Back.easeInOut"
+                                     data-endeasing="Power1.easeIn"
+                                     data-endspeed="300">
+                                    <div class="heading col-md-6 heading-v3 margin-bottom-40">
+                                        <h2 style="color: white">กรมกิจการสตรีและสถาบันครอบครัว(@s)</h2>
+                                    </div>
+                                </div>
+                                <!-- LAYER -->
+                                <div class="tp-caption revolution-ch2 sft"
+                                     data-x="center"
+                                     data-hoffset="0"
+                                     data-y="190"
+                                     data-speed="1400"
+                                     data-start="2000"
+                                     data-easing="Power4.easeOut"
+                                     data-endspeed="300"
+                                     data-endeasing="Power1.easeIn"
+                                     data-captionhidden="off"
+                                     style="z-index: 6">
+                                     สื่อความหมาย  สร้างความสุข สู่ความเข้าใจ
+                                </div>
+                            </li>
+                            <!-- END SLIDE -->
+                        }
+                    }
+                    
                     <!-- SLIDE -->
                     <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
                         <!-- MAIN IMAGE -->
@@ -453,7 +450,7 @@
                              data-easing="Back.easeInOut"
                              data-endeasing="Power1.easeIn"
                              data-endspeed="300">
-                            Includes 300+ Template Pages
+                             ขนาด 1920 x 700
                         </div>
                         <!-- LAYER -->
                         <div class="tp-caption revolution-ch2 sft"
@@ -467,23 +464,8 @@
                              data-endeasing="Power1.easeIn"
                              data-captionhidden="off"
                              style="z-index: 6">
-                            We are creative technology company providing <br />
-                            key digital services on web and mobile.
-                        </div>
-                        <!-- LAYER -->
-                        <div class="tp-caption sft"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="310"
-                             data-speed="1600"
-                             data-start="2800"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="off"
-                             style="z-index: 6">
-                            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Learn More</a>
-                            <a href="#" class="btn-u btn-brd btn-brd-hover btn-u-light">Our Work</a>
+                            กรมกิจการสตรีและสถาบันครอบครับ <br />
+                            กระทรวงพัฒนาสังคมและความมั่นคงของมนุษย์
                         </div>
                     </li>
                     <!-- END SLIDE -->
