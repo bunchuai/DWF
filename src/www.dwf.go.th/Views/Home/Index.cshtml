@@ -71,27 +71,28 @@
          </div>
          <!-- Popular Topics -->
          <div class="col-md-3 col-sm-12">
-                 <div class="headline"><h2>ประกาศ</h2></div>
-                 <div class="row main-check">
-                     <div class="col-xs-12 md-margin-bottom-20">
-                         <ul class="list-unstyled check-style">
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานพิมพ์รายงาน</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานจ้างจัดงานรณรงค์</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานจ้างทำวีดิทัศน์เพื่อ</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ผ่านการ</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางการผลิตสื่อสิ่งพิมพ์</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ไม่มีผล</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศสอบราคาและเอกสาร</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางสอบราคาจัดซื้อหมึก</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
-                             <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ผ่านการประ</a></li>
-                         </ul>
-                     </div>
+             <div class="headline"><h2>ประกาศ</h2></div>
+             <div class="row main-check">
+                 <div class="col-xs-12 md-margin-bottom-20">
+                     <!--- limit 12 --->
+                     <ul class="list-unstyled check-style">
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานพิมพ์รายงาน</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานจ้างจัดงานรณรงค์</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางงานจ้างทำวีดิทัศน์เพื่อ</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ผ่านการ</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางการผลิตสื่อสิ่งพิมพ์</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ไม่มีผล</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศสอบราคาและเอกสาร</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ราคากลางสอบราคาจัดซื้อหมึก</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศผู้ชนะงานจัดซื้อหมึก</a></li>
+                         <li><i class="fa fa-angle-right color-green"></i> <a href="#">ประกาศรายชื่อผู้ผ่านการประ</a></li>
+                     </ul>
                  </div>
              </div>
-         </div>  
+         </div>
+     </div>  
 </div>
 
 
@@ -103,7 +104,9 @@
             <div class="headline"><h2>คลิปวิดีโอ</h2></div>
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="img-responsive margin-bottom-20" src="~/assets/img/main/luedpuya.jpg" alt="" style="border-radius:3px;">
+                    <div class="responsive-video">
+                        <iframe width="230" height="153" src="~/assets/video/youtube-business/test.mp4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>    
                 </div>
                 <div class="col-sm-8">
                     <p>
@@ -165,61 +168,65 @@
 <!----- ข่าวประชาสัมพันธ์ ----->
 <div class="container">
     <div class="row">
-        <div class="headline"><h2>ข่าวประชาสัมพันธ์</h2></div>
-        <div class="row margin-bottom-20">
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                    <div class="thumbnail-img">
-                        <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/a.jpg" alt="">
+        <div class="shadow-wrapper">
+            <div class="tag-box tag-box-v1 box-shadow shadow-effect-2">
+                <div class="headline"><h2>ข่าวประชาสัมพันธ์</h2></div>
+                <div class="row margin-bottom-20">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                            <div class="thumbnail-img">
+                                <div class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/a.jpg" alt="">
+                                </div>
+                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
+                            </div>
+                            <div class="caption">
+                                <h3><a class="hover-effect" href="#">พรบ.ความเท่าเทียมระหว่างเพศ</a></h3>
+                                <p>หลักเกณฑ์ อัตราค่าใช้จ่าย และแนวทาง การพิจารณางบประมาณรายจ่ายประจำปี</p>
+                            </div>
                         </div>
-                        <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                     </div>
-                    <div class="caption">
-                        <h3><a class="hover-effect" href="#">พรบ.ความเท่าเทียมระหว่างเพศ</a></h3>
-                        <p>หลักเกณฑ์ อัตราค่าใช้จ่าย และแนวทาง การพิจารณางบประมาณรายจ่ายประจำปี</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                    <div class="thumbnail-img">
-                        <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/b.jpg" alt="">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                            <div class="thumbnail-img">
+                                <div class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/b.jpg" alt="">
+                                </div>
+                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
+                            </div>
+                            <div class="caption">
+                                <h3><a class="hover-effect" href="#">ประกาศกรมกิจการสตรีและสถาบันครอบครัว</a></h3>
+                                <p>เรื่อง รายชื่อผู้ผ่านการเลือกสรรเพื่อจัดจ้างเป็นพนักงานราชการทั่วไป (ส่วนภูมิภาค) </p>
+                            </div>
                         </div>
-                        <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                     </div>
-                    <div class="caption">
-                        <h3><a class="hover-effect" href="#">ประกาศกรมกิจการสตรีและสถาบันครอบครัว</a></h3>
-                        <p>เรื่อง รายชื่อผู้ผ่านการเลือกสรรเพื่อจัดจ้างเป็นพนักงานราชการทั่วไป (ส่วนภูมิภาค) </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                    <div class="thumbnail-img">
-                        <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/c.jpg" alt="">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                            <div class="thumbnail-img">
+                                <div class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/c.jpg" alt="">
+                                </div>
+                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
+                            </div>
+                            <div class="caption">
+                                <h3><a class="hover-effect" href="#">ศูนย์ลำปางลงพื้นที่โครงการ </a></h3>
+                                <p>"เติมใจสู้ภัยแล้ง ห่างไกลภัยค้ามนุษย์ ประจำปี 2559"</p>
+                            </div>
                         </div>
-                        <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                     </div>
-                    <div class="caption">
-                        <h3><a class="hover-effect" href="#">ศูนย์ลำปางลงพื้นที่โครงการ </a></h3>
-                        <p>"เติมใจสู้ภัยแล้ง ห่างไกลภัยค้ามนุษย์ ประจำปี 2559"</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="thumbnails thumbnail-style thumbnail-kenburn">
-                    <div class="thumbnail-img">
-                        <div class="overflow-hidden">
-                            <img class="img-responsive" src="assets/img/main/d.jpg" alt="">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnails thumbnail-style thumbnail-kenburn">
+                            <div class="thumbnail-img">
+                                <div class="overflow-hidden">
+                                    <img class="img-responsive" src="assets/img/main/d.jpg" alt="">
+                                </div>
+                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
+                            </div>
+                            <div class="caption">
+                                <h3><a class="hover-effect" href="#">สค. ขยายเวลาการเปิดรับสมัคร</a></h3>
+                                <p>สค. ขยายเวลาการเปิดรับสมัครผลงานเข้าประกวดผลงานวิจัยและวิทยานิพนธ์ดีเด่นด้านครอบครัว ประจำปี 2559</p>
+                            </div>
                         </div>
-                        <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
-                    </div>
-                    <div class="caption">
-                        <h3><a class="hover-effect" href="#">สค. ขยายเวลาการเปิดรับสมัคร</a></h3>
-                        <p>สค. ขยายเวลาการเปิดรับสมัครผลงานเข้าประกวดผลงานวิจัยและวิทยานิพนธ์ดีเด่นด้านครอบครัว ประจำปี 2559</p>
                     </div>
                 </div>
             </div>
@@ -232,50 +239,50 @@
 <!----- ประกาศ ----->
 <div class="container">
     <div class="row margin-bottom-30">
-        <div class="col-md-4">
-            <div class="service">
-                <i class="fa fa-cogs service-icon"></i>
-                <div class="desc">
-                    <h4>พื้นที่เข้าร่วมโครงการตำบลเข้มแข็ง</h4>
-                    <p>ที่มา : 
-                    <a href="http://www.owf.go.th/tumbon/report.htm" title="เข้าร่วมโครงการตำบลเข้มแข็ง" target="_blank">
-                        http://www.owf.go.th/tumbon/report.htm
-                        </a>
-                    </p>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4>พื้นที่เข้าร่วมโครงการตำบลเข้มแข็ง</h4>
+                            <p>
+                                ที่มา :
+                                <a href="http://www.owf.go.th/tumbon/report.htm" title="เข้าร่วมโครงการตำบลเข้มแข็ง" target="_blank">
+                                    http://www.owf.go.th/tumbon/report.htm
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4>การพัฒนามนุษย์ด้านความเสมอภาคหญิงชายในระดับสากล</h4>
+                            <p>
+                                ที่มา :
+                                <a href="http://www.gender.go.th/indicator/HdiGii/mainhdi.html" title="การพัฒนามนุษย์ด้านความเสมอภาคหญิงชายในระดับสากล" target="_blank">
+                                    http://www.gender.go.th/indicator/HdiGii/mainhdi.html
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service">
+                        <i class="fa fa-cogs service-icon"></i>
+                        <div class="desc">
+                            <h4>สถานการณ์หญิงชายของประเทศไทย</h4>
+                            <p>
+                                ที่มา :
+                                <a href="http://www.gender.go.th/template.php?vname=report/mainreport.html" title="สถานการณ์หญิงชายของประเทศไทย" target="_blank">
+                                    http://www.gender.go.th/template.php?vname=report/mainreport.html
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="service">
-                <i class="fa fa-cogs service-icon"></i>
-                <div class="desc">
-                    <h4>การพัฒนามนุษย์ด้านความเสมอภาคหญิงชายในระดับสากล</h4>
-                    <p>
-                        ที่มา :
-                        <a href="http://www.gender.go.th/indicator/HdiGii/mainhdi.html" title="การพัฒนามนุษย์ด้านความเสมอภาคหญิงชายในระดับสากล" target="_blank">
-                            http://www.gender.go.th/indicator/HdiGii/mainhdi.html
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="service">
-                <i class="fa fa-cogs service-icon"></i>
-                <div class="desc">
-                    <h4>สถานการณ์หญิงชายของประเทศไทย</h4>
-                    <p>
-                        ที่มา :
-                        <a href="http://www.gender.go.th/template.php?vname=report/mainreport.html" title="สถานการณ์หญิงชายของประเทศไทย" target="_blank">
-                            http://www.gender.go.th/template.php?vname=report/mainreport.html
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 
 
