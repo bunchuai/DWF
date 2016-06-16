@@ -386,7 +386,7 @@
                         <!-- Features -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Features
+                                แผนงาน/โครงการ
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
@@ -452,11 +452,12 @@
                             <i class="search fa fa-search search-btn"></i>
                             <div class="search-open">
                                 <div class="input-group animated fadeInDown">
-                                    <input type="text" class="form-control" placeholder="Search">
+                                   <input type="text" class="form-control" id="customSearchText" autocomplete="off"  placeholder="Search">
                                     <span class="input-group-btn">
-                                        <button class="btn-u" type="button">Go</button>
+                                        <input type="button" class="btn-u" id="customSearch" value="Go" data-toggle="modal" data-target=".bs-example-modal-lg">
                                     </span>
-                                </div>
+                                    
+                                 </div>
                             </div>
                         </li>
                         <!-- End Search Block -->
@@ -466,6 +467,21 @@
         </div>
         <!--=== End Header ===-->
 
+        <!---- Results Searce From Google Custom Searce -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                        <h4 id="myLargeModalLabel2" class="modal-title">Results Searce</h4>
+                    </div>
+                    <div class="modal-body">
+                        <gcse:searchresults-only gname="searchOnlyCSE"></gcse:searchresults-only>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------->
 
         <!--=== Slider ===-->
         <div class="tp-banner-container">
@@ -663,16 +679,29 @@
                         <div class="col-md-6">
                             <ul class="footer-socials list-inline">
                                 <li>
+                                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow">
+                                        <img style="border:0;width:88px;height:31px"
+                                             src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                                             alt="Valid CSS!" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" rel="nofollow">
+                                        <img style="border:0;width:88px;height:31px"
+                                             src="http://jigsaw.w3.org/css-validator/images/vcss"
+                                             alt="Valid CSS!" />
+                                    </a>
+                                </li>
+                                <li>
                                     <a href="https://www.facebook.com/sorkor023068633/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <!-- End Social Links -->
                     </div>
                 </div>
-            </div><!--/copyright-->
+            </div>
         </div>
         <!--=== End Footer Version 1 ===-->
 
@@ -707,6 +736,31 @@
 			RevolutionSlider.initRSfullWidth();
 		});
     </script>
+    <script>
+            window.__gcse = {
+                callback: googleCSELoaded
+            };
+
+            function googleCSELoaded() {
+                // The hook in question.
+                $("#customSearch").click(function () {
+                    var searchText = $("#customSearchText").val();
+                    console.log(searchText);
+                    var element = google.search.cse.element.getElement('searchOnlyCSE');
+                    element.execute(searchText);
+                })
+            }
+
+          (function() {
+            var cx = '010607368559754793872:hhlrg2fxh4q';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+    </script>  
     <script src="~/assets/plugins/respond.js"></script>
     <script src="~/assets/plugins/html5shiv.js"></script>
     <script src="~/assets/plugins/placeholder-IE-fixes.js"></script>
