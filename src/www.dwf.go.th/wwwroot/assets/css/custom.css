@@ -1,1 +1,16 @@
-/* Add here all your css styles (customizations) */
+
+
+/*custom css in all page*/
+@font-face {
+ font-family: Myfont;
+ src: url("/assets/plugins/font-awesome/fonts/THSarabun.ttf") format('woff')/* TTF file for CSS3 browsers */
+}
+@font-face {
+ font-family: Myfont;
+ src: url("assets/plugins/font-awesome/THSarabun.ttf") /* TTF file for CSS3 browsers */
+}
+
+
+.footer-v1 .footer {
+    background : #6f0749;
+}

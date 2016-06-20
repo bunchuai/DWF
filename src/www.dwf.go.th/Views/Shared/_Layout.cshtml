@@ -17,6 +17,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Web Fonts -->
     <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="~/assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
@@ -30,7 +31,10 @@
     <link rel="stylesheet" href="~/assets/plugins/fancybox/source/jquery.fancybox.css">
     <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="~/assets/plugins/revolution-slider/rs-plugin/css/settings.css" type="text/css" media="screen">
-    <!--[if lt IE 9]><link rel="stylesheet" href="assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen"><![endif]-->
+    <link rel="stylesheet" href="~/assets/plugins/revolution-slider/rs-plugin/css/settings-ie8.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="assets/plugins/image-hover/css/img-hover.css">
+    <link rel="stylesheet" href="~/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
     <!-- CSS Theme -->
     <link rel="stylesheet" href="~/assets/css/theme-colors/default.css" id="style_color">
     <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css">
@@ -38,6 +42,8 @@
     <link rel="stylesheet" href="~/assets/css/custom.css">
     <!-- CSS style-switcher -->
     <link rel="stylesheet" href="~/assets/css/plugins/style-switcher.css">
+    <link rel="stylesheet" href="~/assets/plugins/master-slider/masterslider/style/masterslider.css">
+    <link rel="stylesheet" href="~/assets/plugins/master-slider/masterslider/skins/default/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -46,7 +52,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="logo" href="@Url.Content("~/")">
-                    <img src="~/assets/img/logo-dwf351x92.54.png" alt="กรมกิจการสตรีและสถาบันครอบครัว">
+                    <img src="~/assets/img/logo-dwf351x92.54.png" alt="กรมกิจการสตรีและสถาบันครอบครัว"  style="margin:0px;">
                 </a>
                 <!-- End Logo -->
                 <!-- Topbar -->
@@ -456,7 +462,6 @@
                                     <span class="input-group-btn">
                                         <input type="button" class="btn-u" id="customSearch" value="Go" data-toggle="modal" data-target=".bs-example-modal-lg">
                                     </span>
-                                    
                                  </div>
                             </div>
                         </li>
@@ -466,7 +471,6 @@
             </div><!--/navbar-collapse-->
         </div>
         <!--=== End Header ===-->
-
         <!---- Results Searce From Google Custom Searce -->
         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -649,7 +653,8 @@
                                 <li><a href="#">สารจากนายกรัฐมนตรี</a><i class="fa fa-angle-right"></i></li>
                                 <li><a href="#">ภารกิจหน้าที่</a><i class="fa fa-angle-right"></i></li>
                             </ul>
-                        </div><!--/col-md-3-->
+                        </div>
+                        <!--/col-md-3-->
                         <!-- End Link List -->
                         <!-- Address -->
                         <div class="col-md-3 map-img md-margin-bottom-40">
@@ -725,7 +730,17 @@
     <script type="text/javascript" src="~/assets/js/plugins/fancy-box.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/owl-carousel.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/revolution-slider.js"></script>
+    <!--- cude portfolio-->
+    <script type="text/javascript" src="~/assets/plugins/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <script type="text/javascript" src="~/assets/js/plugins/cube-portfolio/cube-portfolio-4.js"></script>
+    <!---------->
     <script type="text/javascript" src="~/assets/js/plugins/style-switcher.js"></script>
+    <script src="~/assets/js/plugins/fancy-box.js"></script>
+
+
+    <script type="text/javascript" src="~/assets/plugins/image-hover/js/touch.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/image-hover/js/modernizr.js"></script>
+
     <script type="text/javascript">
 		jQuery(document).ready(function() {
 			App.init();
@@ -760,6 +775,7 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
           })();
+
     </script>  
     <script src="~/assets/plugins/respond.js"></script>
     <script src="~/assets/plugins/html5shiv.js"></script>
