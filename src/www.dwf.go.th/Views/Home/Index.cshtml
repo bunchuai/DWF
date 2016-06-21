@@ -103,7 +103,7 @@
             <!-- Tab v4 -->
             <div class="tab-v4">
                 <!-- Tab Heading -->
-                <div class="headline"><h2><span class="glyphicon glyphicon-globe"></span> คลิปวิดีโอ</h2></div>
+                <div class="headline"><h2><span aria-hidden="true" class="icon-social-youtube"></span> คลิปวิดีโอ</h2></div>
                 <!-- End Latest News -->
                 <!-- Tab Content -->
                 <div class="tab-content">
@@ -112,17 +112,17 @@
                             <div class="col-sm-7">
                                 <!-- Blog Grid -->
                                 <div class="blog-grid sm-margin-bottom-40">
-                                    <iframe width="653" height="332" src="https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                    <div class="video-container" id="video-container"></div>
                                     <h3><a href="blog_single.html">กรมกิจการสตรีและสถาบันครอบครัว</a></h3>
                                     <ul class="blog-grid-info">
-                                        <li>Alex Amell</li>
+                                        <li>By bunchuai</li>
                                         <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
                                         <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                     </ul>
                                     <p>
                                         วันนี้ (พฤ.9 มิ.ย. 59) เวลา 06.30 น.ณ พระบรมราชานุสาวรีย์ ภายในพระวิหารหลวงวัดสุทัศนเทพวราราม ถนนบำรุงเมือง เขตพระนคร กรุงเทพมหานคร เลขานุการกรม สค. (นางพัทธ์วิรา สุวรรณ) เป็นผู้แทนกรม สค.
                                     </p>
-                                    <a class="r-more" href="@Url.Content("")">ดูคลิปวิดีโอทั้งหมด</a>
+                                    
                                 </div>
                                 <!-- End Blog Grid -->
                             </div>
@@ -134,13 +134,13 @@
                                     </div>
                                     <div class="blog-thumb-desc">
                                         <h3>
-                                            <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">
-                                                วันนี้ (พฤ.9 มิ.ย. 59) ณ พระบรมราชานุสาวรีย์
+                                            <!--- <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">-->
+                                            <a href="Javascript:void(0)" onclick="FnPlayVideo('https://www.youtube.com/embed/NtlKH0nJXAk?rel=0&amp;showinfo=0&autoplay=1')">
+                                                <span aria-hidden="true" class="icon-social-youtube"></span> ประชาสัมพันธ์ กรมกิจการสตรีและสถาบันครอบครัว กรมกิจการสตรีและสถาบันครอบครัว
                                             </a>
-
                                         </h3>
                                         <ul class="blog-thumb-info">
-                                            <li>Mar 6, 2015</li>
+                                            <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                         </ul>
                                     </div>
@@ -153,13 +153,12 @@
                                     </div>
                                     <div class="blog-thumb-desc">
                                         <h3>
-                                            <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">
-                                                วันนี้ (พฤ.9 มิ.ย. 59) ณ พระบรมราชานุสาวรีย์
+                                            <a href="Javascript:void(0)"  onclick="FnPlayVideo('https://www.youtube.com/embed/P37DcLiX5Mg?rel=0&amp;showinfo=0&autoplay=1')">
+                                                <span aria-hidden="true" class="icon-social-youtube"></span> วานนี้ (6 ม.ย.59) เวลา 09.00 น. พลเอก ประยุทธ์ จันทร์โอชา ณ ตึกสันติไมตรี ทำเนียบรัฐบาล นายกรัฐมนตรี
                                             </a>
-
                                         </h3>
                                         <ul class="blog-thumb-info">
-                                            <li>Mar 6, 2015</li>
+                                            <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                         </ul>
                                     </div>
@@ -173,12 +172,11 @@
                                     <div class="blog-thumb-desc">
                                         <h3>
                                             <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">
-                                                วันนี้ (พฤ.9 มิ.ย. 59) ณ พระบรมราชานุสาวรีย์
+                                                <span aria-hidden="true" class="icon-social-youtube"></span> กรมกิจการสตรีและสถาบันครอบครัว กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์ ขอเชิญชวนนิสิต/นักศึกษา/ช่างภาพสมัครเล่น
                                             </a>
-
                                         </h3>
                                         <ul class="blog-thumb-info">
-                                            <li>Mar 6, 2015</li>
+                                            <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                         </ul>
                                     </div>
@@ -192,12 +190,11 @@
                                     <div class="blog-thumb-desc">
                                         <h3>
                                             <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">
-                                                วันนี้ (พฤ.9 มิ.ย. 59) ณ พระบรมราชานุสาวรีย์
+                                                <span aria-hidden="true" class="icon-social-youtube"></span> บ่ายวันนี้ (พ.1 มิ.ย. 59) เวลา 14.30 น. อธิบดีกรมกิจการสตรีและสถาบันครอบครัว (นายเลิศปัญญา บูรณบัณฑิต)
                                             </a>
-
                                         </h3>
                                         <ul class="blog-thumb-info">
-                                            <li>Mar 6, 2015</li>
+                                            <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                         </ul>
                                     </div>
@@ -211,19 +208,17 @@
                                     <div class="blog-thumb-desc">
                                         <h3>
                                             <a class="cbp-lightbox" data-title="Presentation" href="https://www.youtube.com/watch?v=t-qA18UtdxE&autoplay=1" data-cbp-lightbox="presentation-video">
-                                                วันนี้ (พฤ.9 มิ.ย. 59) ณ พระบรมราชานุสาวรีย์
+                                                <span aria-hidden="true" class="icon-social-youtube"></span> บ่ายวันนี้ (พ.1 มิ.ย. 59) เวลา 13.30 น. อธิบดีกรมกิจการสตรีและสถาบันครอบครัว (นายเลิศปัญญา บูรณบัณฑิต)
                                             </a>
-
                                         </h3>
                                         <ul class="blog-thumb-info">
-                                            <li>Mar 6, 2015</li>
+                                            <li>@DateTime.Now.ToString("yyyy/MM/dd HH-mm-ss")</li>
                                             <li><a href="#"><i class="fa fa-comments"></i> 0</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <!-- end Blog Thumb -->
-
-
+                                <a class="r-more" href="@Url.Content("~/Media/media")"><span aria-hidden="true" class="icon-action-redo"></span> ดูคลิปวิดีโอทั้งหมด</a>
                             </div>
                         </div><!--/end row-->
                     </div> 
@@ -347,11 +342,10 @@
                                 <div class="overflow-hidden">
                                     <img class="img-responsive" src="assets/img/main/a.jpg" alt="">
                                 </div>
-                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                             </div>
                             <div class="caption">
                                 <h3><a class="hover-effect" href="#">พรบ.ความเท่าเทียมระหว่างเพศ</a></h3>
-                                <p>หลักเกณฑ์ อัตราค่าใช้จ่าย และแนวทาง การพิจารณางบประมาณรายจ่ายประจำปี</p>
+                                <p>หลักเกณฑ์ อัตราค่าใช้จ่าย และแนวทาง การพิจารณางบประมาณรายจ่ายประจำปี...<a href="">อ่านต่อ</a></p>
                             </div>
                         </div>
                     </div>
@@ -361,11 +355,10 @@
                                 <div class="overflow-hidden">
                                     <img class="img-responsive" src="assets/img/main/b.jpg" alt="">
                                 </div>
-                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                             </div>
                             <div class="caption">
                                 <h3><a class="hover-effect" href="#">ประกาศกรมกิจการสตรีและสถาบันครอบครัว</a></h3>
-                                <p>เรื่อง รายชื่อผู้ผ่านการเลือกสรรเพื่อจัดจ้างเป็นพนักงานราชการทั่วไป (ส่วนภูมิภาค) </p>
+                                <p>เรื่อง รายชื่อผู้ผ่านการเลือกสรรเพื่อจัดจ้างเป็นพนักงานราชการทั่วไป (ส่วนภูมิภาค)...<a href="">อ่านต่อ</a> </p>
                             </div>
                         </div>
                     </div>
@@ -375,11 +368,10 @@
                                 <div class="overflow-hidden">
                                     <img class="img-responsive" src="assets/img/main/c.jpg" alt="">
                                 </div>
-                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                             </div>
                             <div class="caption">
                                 <h3><a class="hover-effect" href="#">ศูนย์ลำปางลงพื้นที่โครงการ </a></h3>
-                                <p>"เติมใจสู้ภัยแล้ง ห่างไกลภัยค้ามนุษย์ ประจำปี 2559"</p>
+                                <p>"เติมใจสู้ภัยแล้ง ห่างไกลภัยค้ามนุษย์ ประจำปี 2559" ...<a href="">อ่านต่อ</a></p>
                             </div>
                         </div>
                     </div>
@@ -389,11 +381,10 @@
                                 <div class="overflow-hidden">
                                     <img class="img-responsive" src="assets/img/main/d.jpg" alt="">
                                 </div>
-                                <a class="btn-more hover-effect" href="#">อ่านต่อ +</a>
                             </div>
                             <div class="caption">
                                 <h3><a class="hover-effect" href="#">สค. ขยายเวลาการเปิดรับสมัคร</a></h3>
-                                <p>สค. ขยายเวลาการเปิดรับสมัครผลงานเข้าประกวดผลงานวิจัยและวิทยานิพนธ์ดีเด่นด้านครอบครัว ประจำปี 2559</p>
+                                <p>สค. ขยายเวลาการเปิดรับสมัครผลงานเข้าประกวดผลงานวิจัยและวิทยานิพนธ์ดีเด่นด้านครอบครัว ประจำปี 2559...<a href="">อ่านต่อ</a></p>
                             </div>
                         </div>
                     </div>
@@ -450,6 +441,24 @@
         </div>
     </div>
 </div>
-        
+
+@section Scripts{
+    <script>
+        /* set video player */
+        $(document).ready(function () {
+            /* default video */
+            var video = '<iframe width="653" height="332" src="https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+            $("#video-container").html(video);
+        });
+
+        function FnPlayVideo(link) {
+            var url = '@Url.Content("Home/AjaxVideo")';
+            $.get(url , { "link": link }, function (rs) {
+                    $("#video-container").html(rs);
+            });
+        }
+
+    </script>
+}  
 
 

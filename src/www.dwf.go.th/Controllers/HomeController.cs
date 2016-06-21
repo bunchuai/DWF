@@ -23,6 +23,15 @@ namespace www.dwf.go.th.Controllers
             return View("Help");
         }
 
+        [HttpGet]
+        public IActionResult AjaxVideo(string link)
+        {
+            string HTML = "";
+            HTML += '<iframe width="653" height="332" src="'+ link + '" frameborder="0" allowfullscreen></iframe>';
+
+            return Json(HTML);
+        }
+
         public IActionResult Error()
         {
             return View();
