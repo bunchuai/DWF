@@ -11,7 +11,14 @@ namespace www.dwf.go.th.Controllers
     public class Complaint : Controller
     {
         // GET: /<controller>/
+        // แบบที่ 1
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        // แบบที่ 2
+        public IActionResult Complaint2()
         {
             return View();
         }
