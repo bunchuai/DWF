@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="~/assets/plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="~/assets/plugins/cube-portfolio/cubeportfolio/custom/custom-cubeportfolio.css">
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="~/assets/css/theme-colors/default.css" id="style_color">
+    <link rel="stylesheet" href="~/assets/css/theme-colors/color-refault.css" id="style_color">
     <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css">
     <!-- CSS Customization -->
     <link rel="stylesheet" href="~/assets/css/custom.css">
@@ -125,8 +125,6 @@
                 </div>
                 <!---- End switcher ---->
 
-
-
                 <div class="topbar">
                     <ul class="loginbar pull-right">
                         <li class="fa fa-home"><a href="@Url.Content("~/")"> หน้าแรก</a></li>
@@ -140,11 +138,15 @@
                             </ul>
                         </li>
                         <li class="topbar-devider"></li>
-                        <li class="icon-settings"> <a href="javascript:void(0)"> ร้องทุกข์ร้องเรียน</a></li>
-                        <li class="topbar-devider"></li>
-                        <li class="icon-settings"> <a href="@Url.Content("~/Home/Help")"> ช่วยเหลือ</a></li>
-                        <li class="topbar-devider"></li>
-                        <li class="icon-user"> <a href="@Url.Content("~/Home/Intralogin")" target="_blank"> อินทราเน็ต</a></li>
+                        <li class="hoverSelector">
+                            <i class="fa  fa-sort-alpha-asc"></i>
+                            <a>ขนาดตัวอักษร</a>
+                            <ul class="languages hoverSelectorBlock">
+                                <li class="active"><a href="#">ปกติ <i class="fa fa-check"></i></a></li>
+                                <li><a href="#">กลาง</a></li>
+                                <li><a href="#">ใหญ่</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <!-- End Topbar -->
