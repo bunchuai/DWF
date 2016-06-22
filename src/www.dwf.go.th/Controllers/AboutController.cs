@@ -94,5 +94,10 @@ namespace www.dwf.go.th.Controllers
         {
             return View();
         }
+
+        public IActionResult Test()
+        {
+            return View();
+        }
     }
 }
