@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="~/assets/css/plugins/style-switcher.css">
     <link rel="stylesheet" href="~/assets/plugins/master-slider/masterslider/style/masterslider.css">
     <link rel="stylesheet" href="~/assets/plugins/master-slider/masterslider/skins/default/style.css">
+
 </head>
 <body>
     <div class="wrapper">
@@ -55,7 +56,7 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="logo" href="@Url.Content("~/")">
-                    <img src="~/assets/img/logo-dwf351x92.54.png" alt="กรมกิจการสตรีและสถาบันครอบครัว"  style="margin:0px;">
+                    <img src="~/assets/img/logo3.png" class="img-responsive" alt="กรมกิจการสตรีและสถาบันครอบครัว"  style="margin:10px;">
                 </a>
                 <!-- End Logo -->
                 <!-- Topbar -->
@@ -130,8 +131,6 @@
 
                 <div class="topbar">
                     <ul class="loginbar pull-right">
-                        <li class="fa fa-home"><a href="@Url.Content("~/")"> หน้าแรก</a></li>
-                        <li class="topbar-devider"></li>
                         <li class="hoverSelector">
                             <i class="fa fa-globe"></i>
                             <a>ภาษา</a>
@@ -142,7 +141,7 @@
                         </li>
                         <li class="topbar-devider"></li>
                         <li class="hoverSelector">
-                            <i class="fa  fa-sort-alpha-asc"></i>
+                            <i class="fa  fa-font"></i>
                             <a>ขนาดตัวอักษร</a>
                             <ul class="languages hoverSelectorBlock">
                                 <li class="active"><a href="#">ปกติ <i class="fa fa-check"></i></a></li>
@@ -448,87 +447,122 @@
             </div>
         </div>
         <!-------------------->
-
         <!--=== Slider ===-->
-        <div class="tp-banner-container" style="height:400px;">
-            <div class="tp-banner">
-                <ul>
-                    <!-- SLIDE -->
-                    @{
-                        for (int s = 1; s <= 1; s++)
-                        {
-                            <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 1">
-                                <!-- MAIN IMAGE -->
-                                <img src="~/assets/img/sliders/slide3.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                                <div class="tp-caption revolution-ch1 sft start"
-                                     data-x="center"
-                                     data-hoffset="0"
-                                     data-y="100"
-                                     data-speed="1500"
-                                     data-start="500"
-                                     data-easing="Back.easeInOut"
-                                     data-endeasing="Power1.easeIn"
-                                     data-endspeed="300">
-                                    <div class="heading col-md-6 heading-v3 margin-bottom-40">
-                                        <h2 style="color: white">กรมกิจการสตรีและสถาบันครอบครัว(@s)</h2>
-                                    </div>
-                                </div>
-                                <!-- LAYER -->
-                                <div class="tp-caption revolution-ch2 sft"
-                                     data-x="center"
-                                     data-hoffset="0"
-                                     data-y="190"
-                                     data-speed="1400"
-                                     data-start="2000"
-                                     data-easing="Power4.easeOut"
-                                     data-endspeed="300"
-                                     data-endeasing="Power1.easeIn"
-                                     data-captionhidden="off"
-                                     style="z-index: 6">
-                                     สื่อความหมาย  สร้างความสุข สู่ความเข้าใจ
-                                </div>
-                            </li>
-                            <!-- END SLIDE -->
-                        }
-                    }
-                    
-                    <!-- SLIDE -->
-                    <li class="revolution-mch-1" data-transition="fade" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/img/sliders/slide2.jpg" alt="darkblurbg" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
-                        <div class="tp-caption revolution-ch1 sft start"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="100"
-                             data-speed="1500"
-                             data-start="500"
-                             data-easing="Back.easeInOut"
-                             data-endeasing="Power1.easeIn"
-                             data-endspeed="300">
-                             ขนาด 1920 x 700
-                        </div>
-                        <!-- LAYER -->
-                        <div class="tp-caption revolution-ch2 sft"
-                             data-x="center"
-                             data-hoffset="0"
-                             data-y="190"
-                             data-speed="1400"
-                             data-start="2000"
-                             data-easing="Power4.easeOut"
-                             data-endspeed="300"
-                             data-endeasing="Power1.easeIn"
-                             data-captionhidden="off"
-                             style="z-index: 6">
-                            กรมกิจการสตรีและสถาบันครอบครับ <br />
-                            กระทรวงพัฒนาสังคมและความมั่นคงของมนุษย์
-                        </div>
-                    </li>
-                    <!-- END SLIDE -->
-                </ul>
-                <div class="tp-bannertimer tp-bottom"></div>
+        <div class="ms-layers-template">
+            <!-- masterslider -->
+            <div class="master-slider ms-skin-black-2 round-skin" id="masterslider">
+                <div class="ms-slide" style="z-index: 10">
+                    <img src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/bg/img2.jpg" alt="">
+                    <div class="ms-layer ms-promo-info color-light" style="left:15px; top:160px"
+                         data-effect="bottom(40)"
+                         data-duration="2000"
+                         data-delay="700"
+                         data-ease="easeOutExpo">Introducing</div>
+                    <div class="ms-layer ms-promo-info ms-promo-info-in color-light" style="left:15px; top:210px"
+                         data-effect="bottom(40)"
+                         data-duration="2000"
+                         data-delay="1000"
+                         data-ease="easeOutExpo"><span class="color-green">Unify</span>Template</div>
+                    <div class="ms-layer ms-promo-sub color-light" style="left:15px; top:310px"
+                         data-effect="bottom(40)"
+                         data-duration="2000"
+                         data-delay="1300"
+                         data-ease="easeOutExpo">We are creative technology company providing<br>key digital services on web and mobile.</div>
+
+                    <a class="ms-layer btn-u" style="left:15px; top:390px" href="#"
+                       data-effect="bottom(40)"
+                       data-duration="2000"
+                       data-delay="1300"
+                       data-ease="easeOutExpo">LEARN MORE</a>
+                    <a class="ms-layer btn-u btn-u-dark" style="left:150px; top:390px" href="#"
+                       data-effect="bottom(40)"
+                       data-duration="2000"
+                       data-delay="1300"
+                       data-ease="easeOutExpo">ABOUT US</a>
+                </div>
+                <div class="ms-slide" style="z-index: 13">
+                    <img src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/bg/img4.jpg" alt="">
+                    <img class="ms-layer" src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/mockup/hand-black-iphone-l.png" alt=""
+                         style="bottom:-10px; left:15px; width:400px; height: auto;"
+                         data-effect="bottom(100)"
+                         data-duration="2000"
+                         data-ease="easeOutExpo"
+                         data-type="image" />
+                    <h3 class="ms-layer ms-promo-info-in color-light" style="left:450px; top:170px;"
+                        data-effect="right(40)"
+                        data-duration="2300"
+                        data-delay="1300"
+                        data-ease="easeOutExpo">
+                        MOST
+                    </h3>
+                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:450px; top:230px"
+                        data-effect="left(40)"
+                        data-duration="2300"
+                        data-delay="1400"
+                        data-ease="easeOutBack">
+                        INCREDIBLE
+                    </h3>
+                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:450px; top:290px"
+                        data-effect="left(40)"
+                        data-duration="2300"
+                        data-delay="1400"
+                        data-ease="easeOutBack">
+                        NEW <span class="color-light">FEATURES</span>
+                    </h3>
+                    <a class="ms-layer btn-u" style="left:450px; top:370px" href="#"
+                       data-effect="bottom(40)"
+                       data-duration="2000"
+                       data-delay="1300"
+                       data-ease="easeOutExpo">LEARN MORE</a>
+                    <a class="ms-layer btn-u btn-u-dark" style="left:580px; top:370px" href="#"
+                       data-effect="bottom(40)"
+                       data-duration="2000"
+                       data-delay="1300"
+                       data-ease="easeOutExpo">DOWNLOAD NOW</a>
+                </div>
+                <div class="ms-slide" style="z-index: 12">
+                    <img src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/bg/img3.jpg" alt="">
+                    <div class="ms-layer video-box" style="bottom:125px; right:15px; width:650px; height:370px;"
+                         data-type="video"
+                         data-effect="rotate3dright(0,30,0,100,r)"
+                         data-duration="1500"
+                         data-ease="easeOutQuad">
+                        <img class="ms-img-bordered" src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/main/img20.jpg" alt="">
+                        <iframe src="http://player.vimeo.com/video/70528799" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+                    </div>
+                    <h3 class="ms-layer ms-promo-info color-light" style="left:10px; top:170px"
+                        data-effect="bottom(20)"
+                        data-duration="2300"
+                        data-delay="2300"
+                        data-ease="easeOutExpo">
+                        AMAZING
+                    </h3>
+                    <h3 class="ms-layer ms-promo-info-in color-light" style="left:10px; top:245px"
+                        data-effect="left(100)"
+                        data-duration="3300"
+                        data-delay="1900"
+                        data-ease="easeOutExpo">
+                        <span class="color-green">FEATURES</span>
+                    </h3>
+                    <h3 class="ms-layer normal-title color-light" style="left:10px; top:312px"
+                        data-effect="bottom(20)"
+                        data-duration="2300"
+                        data-delay="2000"
+                        data-ease="easeOutExpo">
+                        UNIFY BOOTSTRAP TEMPLATE
+                    </h3>
+                    <p class="ms-layer ms-promo-sub ms-promo-sub-in color-light" style="left:10px; top:360px"
+                       data-effect="right(40)"
+                       data-duration="2300"
+                       data-delay="2300"
+                       data-ease="easeOutExpo">YOUTUBE, VIMEO AND CUSTOM<br>IFRAME SUPPORTED</p>
+                </div>
             </div>
+            <!-- end of masterslider -->
         </div>
         <!--=== End Slider ===-->
+        <!--=== End Slider ===-->
+
         <!--- Content --->
 
         @RenderBody()
@@ -702,8 +736,19 @@
     <script src="~/assets/js/plugins/fancy-box.js"></script>
 
 
-    <script type="text/javascript" src="~/assets/plugins/image-hover/js/touch.js"></script>
+
+    <script src="~/assets/plugins/master-slider/masterslider/masterslider.min.js"></script>
+    <script src="~/assets/plugins/master-slider/masterslider/jquery.easing.min.js"></script>
+
+    <script type="text/javascript" src="~/assets/js/plugins/master-slider-fw.js"></script>
     <script type="text/javascript" src="~/assets/plugins/image-hover/js/modernizr.js"></script>
+    <script type="text/javascript" src="~/assets/plugins/image-hover/js/touch.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/fancy-box.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
+
+    <script type="text/javascript" src="~/assets/js/plugins/style-switcher.js"></script>
+
 
     <script type="text/javascript">
 		jQuery(document).ready(function() {
@@ -713,9 +758,11 @@
 			OwlCarousel.initOwlCarousel();
 			StyleSwitcher.initStyleSwitcher();
 			RevolutionSlider.initRSfullWidth();
+			MSfullWidth.initMSfullWidth();
             App.initScrollBar();
 		});
     </script>
+
     <script>
             window.__gcse = {
                 callback: googleCSELoaded

@@ -2,23 +2,26 @@
     ViewData["Title"] = "กรมกิจการสตรีและสถาบันครอบครัว";
 }
 <div class="container content-sm">
+    <div class="heading heading-v2">
+        <h2>แบบฟอร์มร้องทุกข์ร้องเรียน</h2>
+    </div>
+    <br />
     <div class="shadow-wrapper">
-        <div class="tag-box tag-box-v1 box-shadow shadow-effect-2">
+        <div class="tag-box tag-box-v1 box-shadow shadow-effect-4">
             <div class="row">
                 <div class="tag-box form-page">
-                    <div class="headline"><h2>แบบฟอร์มร้องทุกข์ร้องเรียน</h2></div>
-                    <form action="assets/php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form3" class="sky-form sky-changes-3">
+                    <form action="assets/php/sky-forms-pro/demo-contacts-process.php" method="post" id="sky-form4" class="sky-form">
                         <fieldset>
                             <div class="row">
                                 <section class="col col-6">
-                                    <label class="label">Name</label>
+                                    <label class="label">ชื่อ - นามสกุล</label>
                                     <label class="input">
                                         <i class="icon-append fa fa-user"></i>
                                         <input type="text" name="name" id="name">
                                     </label>
                                 </section>
                                 <section class="col col-6">
-                                    <label class="label">E-mail</label>
+                                    <label class="label">อีเมล์</label>
                                     <label class="input">
                                         <i class="icon-append fa fa-envelope-o"></i>
                                         <input type="email" name="email" id="email">
@@ -26,32 +29,54 @@
                                 </section>
                             </div>
                             <section>
-                                <label class="label">Subject</label>
+                                <label class="label">ชื่อเรื่อง</label>
                                 <label class="input">
                                     <i class="icon-append fa fa-tag"></i>
                                     <input type="text" name="subject" id="subject">
                                 </label>
                             </section>
+                            <div class="row">
+                                <section class="col col-5">
+                                    <label class="label">เลือกหมวดหมู่</label>
+                                    <label class="select">
+                                        <select>
+                                            <option>-------------- กรุณาเลือก --------------</option>
+                                            <option>ร้องเรียนเรื่องทุจริต จัดซื้อจัดจ้าง</option>
+                                            <option>ร้องเรียนเรื่องคุณธรรม จริยธรรม</option>
+                                            <option>ข้อคิดเห็นหรือข้อเสนอแนะ</option>
+                                            <option>การใช้งานเว็บไซต์</option>
+                                            <option>ร้องเรียนเรื่องทั่วไป</option>
+                                            <option>สำหรับบุคคลทั่วไป</option>
+                                            <option>แจ้งการใช้งาน</option>
+                                            <option>กิจกรรมของหน่วยงาน</option>
+                                            <option>ข่าวประชาสัมพันธ์เกี่ยวกับการบริการ</option>
+                                            <option>การติดต่อหน่วยงาน</option>
+                                            <option>คำชมเชย</option>
+                                            <option>แจ้งเรื่องการใช้งาน</option>
+                                            <option>การกีดกันระหว่างประโยชน์ส่วนตนและประโยชน์ส่วนรวม</option>
+                                        </select>
+                                    </label>
+                                </section>
+                            </div>
                             <section>
-                                <label class="label">Message</label>
+                                <label class="label">รายละเอียด</label>
                                 <label class="textarea">
                                     <i class="icon-append fa fa-comment"></i>
                                     <textarea rows="4" name="message" id="message"></textarea>
                                 </label>
                             </section>
-                            <section>
-                                <label class="label">Enter characters below:</label>
-                                <label class="input input-captcha">
-                                    <img src="assets/plugins/sky-forms-pro/skyforms/captcha/image.php?<?php echo time(); ?>" width="100" height="32" alt="Captcha image" />
-                                    <input type="text" maxlength="6" name="captcha" id="captcha">
-                                </label>
-                            </section>
-                            <section>
-                                <label class="checkbox"><input type="checkbox" name="copy"><i></i>Send a copy to my e-mail address</label>
-                            </section>
+                            <div class="row">
+                                <section class="col col-4">
+                                    <label class="label">กรุณากรอกข้อมูลที่มองเห็น</label>
+                                    <label class="input input-captcha">
+                                        <img src="~/assets/plugins/sky-forms-pro/skyforms/captcha/captcha_test.png" width="100" height="32" alt="Captcha image" />
+                                        <input type="text" maxlength="6" name="captcha" id="captcha">
+                                    </label>
+                                </section>
+                            </div>
                         </fieldset>
                         <footer>
-                            <button type="submit" class="btn-u">Send message</button>
+                            <button type="submit" class="btn-u">บันทึกข้อมูล</button>
                         </footer>
                         <div class="message">
                             <i class="rounded-x fa fa-check"></i>

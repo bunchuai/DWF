@@ -54,7 +54,7 @@ body.header-fixed-space-default {
 .header .topbar ul.loginbar > li > a,
 .header .topbar ul.loginbar > li > a:hover {
 	color: #7c8082;
-	font-size: 11px;
+	font-size: 16px;
 	text-transform: uppercase;
 }
 
@@ -107,7 +107,7 @@ body.header-fixed-space-default {
 .header .topbar ul.languages li a {
 	color: #555;
 	display: block;
-	font-size: 10px;
+	font-size: 14px;
 	padding: 2px 12px;
 	margin-bottom: 1px;
 	text-transform: uppercase;
@@ -230,7 +230,7 @@ body.header-fixed-space-default {
 /*Navbar Menu*/
 .header .navbar-nav > li > a {
 	color: #687074;
-	font-size: 15px;
+	font-size: 16px;
 	font-weight:400;
 	text-transform: uppercase;
 }
