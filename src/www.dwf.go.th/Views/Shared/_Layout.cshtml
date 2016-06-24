@@ -144,10 +144,11 @@
                             <i class="fa  fa-font"></i>
                             <a>ขนาดตัวอักษร</a>
                             <ul class="languages hoverSelectorBlock">
-                                <li class="active"><a href="#">ปกติ <i class="fa fa-check"></i></a></li>
-                                <li><a href="#">กลาง</a></li>
-                                <li><a href="#">ใหญ่</a></li>
+                                <li class="active"><a href="javascript:void(0)" id="mFontS">ปกติ <i class="fa fa-check"></i></a></li>
+                                <li><a href="javascript:void(0)" id="mFontM">กลาง</a></li>
+                                <li><a href="javascript:void(0)" id="mFontL">ใหญ่</a></li>
                             </ul>
+                            
                         </li>
                     </ul>
                 </div>
@@ -165,12 +166,10 @@
                     <ul class="nav navbar-nav">
                         <!-- Home -->
                         <li class="active">
-                            <a href="@Url.Content("~/")">
-                                หน้าแรก
-                            </a>
+                            <a href="@Url.Content("~/")">หน้าแรก</a>
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                ประกาศ
+                                เกี่ยวกับ สค.
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- About Pages -->
@@ -186,100 +185,34 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- Shortcodes -->
-                        <li class="dropdown mega-menu-fullwidth">
+
+                        <!-- ข้อมูล CIO -->
+                        <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                เกี่ยวกับ สค.
+                                ข้อมูล CIO
                             </a>
                             <ul class="dropdown-menu">
+                                <!-- sub ข้อมูล CIO -->
                                 <li>
-                                    <div class="mega-menu-content disable-icons">
-                                        <div class="container">
-                                            <div class="row equal-height">
-                                                <div class="col-md-3 equal-height-in">
-                                                    <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>เกี่ยวกับ &amp; สค.</h3></li>
-                                                        <!-- Typography -->
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> เกี่ยวกับ สค.</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> พระบรมราโชวาท</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สารจากนายกรัฐมนตรี</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ประวัติความเป็นมา</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> วิสัยทัศน์ พันธกิจหลัก</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ภารกิจหน้าที่</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทำเนียบกรม</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทำเนียบผู้อำนวยการ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารฝ่ายการเมือง พม.</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารฝ่ายข้าราชการประจำ พม.</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหาร</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> โครงสร้าง และ อัตรากำลัง</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คำรับรองการปฏิบัติราชการ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ค่านิยมองค์กร</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คณะกรรมการ</a></li>
-                                                        <!-- End Components -->
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-3 equal-height-in">
-                                                    <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>บทความ งานวิจัย คู่มือ และเอกสารเผยแพร่</h3></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> หนังสือ คู่มือ องค์ความรู้</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> งานติดตามและประเมินผล</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> เอกสารเผยแพร่</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> บทความ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> รายงานประจำปี</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> นโยบายและแผน</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> แผ่นพับ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> งานศึกษา วิจัย สำรวจ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สมัชชาสตรีและครอบครัว</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง (CIO) กรม</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คู่มือเบิกจ่ายเงินรูปแบบ Electronic</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> สถิติข้อมูล สารสนเทศ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> คู่มือ แนวทางดำเนินงาน</a></li>
-                                                        <!-- End Icons -->
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-3 equal-height-in">
-                                                    <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>กฎหมาย/คำสั่ง</h3></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> พระราชบัญญัติ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ประกาศ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> กฎ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ระเบียบ</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ข้อบังคับ/กฏบัตร</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> รายงาน,บันทึก</a></li>
-                                                        <!-- End Common Elements -->
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-3 equal-height-in">
-                                                    <ul class="list-unstyled equal-height-list">
-                                                        <li><h3>สาระน่ารู้</h3></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ศูนย์ข้อมูลข่าวสาร</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ด้านสตรี</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ด้านครอบครัว</a></li>
-                                                        <li><a href="javascript:void(0)"><i class="fa fa-chevron-circle-right"></i> ทั่วไป</a></li>
-                                                        <!-- End Infographics -->
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> ผู้บริหารเทคโนโลยีสารสนเทศระดับสูง</a>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> วิสัยทัศน์และนโยบายของผู้บริหารเทคโนโลยีสารสนเทศ</a>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> การบริหารงานด้าน ICT</a>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> ข่าวสารจากผู้บริหารเทคโนโลยีสารสนเทศ</a>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> ปฏิทืนกิจกรรมผู้บริหารเทคโนโลยีสารสนเทศ</a>
+                                    <a href="javascript:void(0);"><i class="fa  fa-share"></i> ติดต่อ</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- End Shortcodes -->
-                        <!-- End Pages -->
+                        <!-- End ข้อมูล CIO -->
+                        
                         <!-- Blog -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                ปฏิทินกิจกรรม
+                                ข่าวประชาสัมพันธ์
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-submenu">
                                     <a href="javascript:void(0);">Blog Large Image</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="blog_large_right_sidebar1.html">Right Sidebar</a></li>
-                                        <li><a href="blog_large_left_sidebar1.html">Left Sidebar</a></li>
-                                        <li><a href="blog_large_full_width1.html">Full Width</a></li>
-                                    </ul>
                                 </li>
                                 <li class="dropdown-submenu">
                                     <a href="javascript:void(0);">Blog Medium Image</a>
@@ -312,108 +245,24 @@
                             </ul>
                         </li>
                         <!-- End Blog -->
-                        <!-- Portfolio -->
+
+                        <!-- Contact -->
                         <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                แหล่งข้อมูลที่น่าสนใจ
+                            <a href="Javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                                ติดต่อ สค.
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">No Space Boxed</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_grid_no_space.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_grid_no_space.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_grid_no_space.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Grid Boxed</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_grid.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_grid.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_grid.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Grid Text Boxed</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_grid_text.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_grid_text.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_grid_text.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">No Space Full Width</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_fullwidth_no_space.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_fullwidth_no_space.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_fullwidth_no_space.html">4 Columns</a></li>
-                                        <li><a href="portfolio_5_columns_fullwidth_no_space.html">5 Columns</a></li>
-                                        <li><a href="portfolio_6_columns_fullwidth_no_space.html">6 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Grid Full Width</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_fullwidth.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_fullwidth.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_fullwidth.html">4 Columns</a></li>
-                                        <li><a href="portfolio_5_columns_fullwidth.html">5 Columns</a></li>
-                                        <li><a href="portfolio_6_columns_fullwidth.html">6 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Grid Text Full Width</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_2_columns_fullwidth_text.html">2 Columns</a></li>
-                                        <li><a href="portfolio_3_columns_fullwidth_text.html">3 Columns</a></li>
-                                        <li><a href="portfolio_4_columns_fullwidth_text.html">4 Columns</a></li>
-                                        <li><a href="portfolio_5_columns_fullwidth_text.html">5 Columns</a></li>
-                                        <li><a href="portfolio_6_columns_fullwidth_text.html">6 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="portfolio_hover_colors.html">Portfolio Hover Colors</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Portfolio Items</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_single_item.html">Single Item</a></li>
-                                        <li><a href="portfolio_old_item.html">Basic Item 1</a></li>
-                                        <li><a href="portfolio_old_item1.html">Basic Item 2</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="javascript:void(0);">Portfolio Basic Pages</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="portfolio_old_text_blocks.html">Basic Grid Text</a></li>
-                                        <li><a href="portfolio_old_2_column.html">Basic 2 Columns</a></li>
-                                        <li><a href="portfolio_old_3_column.html">Basic 3 Columns</a></li>
-                                        <li><a href="portfolio_old_4_column.html">Basic 4 Columns</a></li>
-                                    </ul>
+                                <!-- ติดต่อ สค. -->
+                                <li>
+                                    <a href="@Url.Content("Contact/center")"><i class="fa   fa-angle-right"></i> ส่วนกลาง</a>
+                                    <a href="@Url.Content("Contact/region")"><i class="fa   fa-angle-right"></i> ส่วนภูมิภาค</a>
+                                    <a href="@Url.Content("Contact/qa")"><i class="fa   fa-angle-right"></i> ถาม-ตอบ</a>
+                                    <a href="@Url.Content("Contact/faq")"><i class="fa   fa-angle-right"></i> คำถามที่พบบ่อย</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- End Portfolio -->
-                        <!-- Features -->
-                        <li class="dropdown">
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                               เกี่ยวกับซีไอโอ
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="feature_gallery.html"></a></li>
-                                <li><a href="feature_animations.html">Animations on Scroll</a></li>
-                                <li><a href="feature_parallax_counters.html">Parallax Counters</a></li>
-                                <li><a href="feature_testimonials_quotes.html">Testimonials and Quotes</a></li>
-                                <li><a href="feature_icon_blocks.html">Icon Blocks</a></li>
-                                <li><a href="feature_team_blocks.html">Team Blocks</a></li>
-                                <li><a href="feature_news_blocks.html">News Blocks</a></li>
-                                <li><a href="feature_parallax_blocks.html">Parallax Blocks</a></li>
-                                <li><a href="feature_funny_boxes.html">Funny Boxes</a></li>
-                                <li><a href="feature_call_to_actions.html">Call To Action</a></li>
-                            </ul>
-                        </li>
-                        <!-- End Features -->
-                        <!-- Demo Pages -->
-                        <!-- End Demo Pages -->
+                        <!-- End Contact -->
+                       
                         <!-- Search Block -->
                         <li>
                             <i class="search fa fa-search search-btn"></i>
@@ -457,19 +306,19 @@
                          data-effect="bottom(40)"
                          data-duration="2000"
                          data-delay="700"
-                         data-ease="easeOutExpo">Introducing</div>
+                         data-ease="easeOutExpo">ยกระดับสถานภาพสตรี</div>
                     <div class="ms-layer ms-promo-info ms-promo-info-in color-light" style="left:15px; top:210px"
                          data-effect="bottom(40)"
                          data-duration="2000"
                          data-delay="1000"
-                         data-ease="easeOutExpo"><span class="color-green">Unify</span>Template</div>
+                         data-ease="easeOutExpo"><span class="color-green">สร้าง</span>ครอบครัวเข้มแข็ง</div>
                     <div class="ms-layer ms-promo-sub color-light" style="left:15px; top:310px"
                          data-effect="bottom(40)"
                          data-duration="2000"
                          data-delay="1300"
-                         data-ease="easeOutExpo">We are creative technology company providing<br>key digital services on web and mobile.</div>
+                         data-ease="easeOutExpo">บนพื้นฐานของสังคมแห่งสิทธิ โอกาส และความเสมอภาค<br>ลดการเลือกปฏิบัติระหว่างเพศ</div>
 
-                    <a class="ms-layer btn-u" style="left:15px; top:390px" href="#"
+                    <!----<a class="ms-layer btn-u" style="left:15px; top:390px" href="#"
                        data-effect="bottom(40)"
                        data-duration="2000"
                        data-delay="1300"
@@ -478,31 +327,31 @@
                        data-effect="bottom(40)"
                        data-duration="2000"
                        data-delay="1300"
-                       data-ease="easeOutExpo">ABOUT US</a>
+                       data-ease="easeOutExpo">ABOUT US</a>--->
                 </div>
                 <div class="ms-slide" style="z-index: 13">
                     <img src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/bg/img4.jpg" alt="">
                     <img class="ms-layer" src="assets/plugins/master-slider/masterslider/style/blank.gif" data-src="assets/img/mockup/hand-black-iphone-l.png" alt=""
-                         style="bottom:-10px; left:15px; width:400px; height: auto;"
+                         style="bottom:-10px; left:-40px; width:400px; height: auto;"
                          data-effect="bottom(100)"
                          data-duration="2000"
                          data-ease="easeOutExpo"
                          data-type="image" />
-                    <h3 class="ms-layer ms-promo-info-in color-light" style="left:450px; top:170px;"
+                    <h3 class="ms-layer ms-promo-info-in color-light" style="left:640px; top:170px;"
                         data-effect="right(40)"
                         data-duration="2300"
                         data-delay="1300"
                         data-ease="easeOutExpo">
                         MOST
                     </h3>
-                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:450px; top:230px"
+                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:565px; top:230px;color:#ffffff;"
                         data-effect="left(40)"
                         data-duration="2300"
                         data-delay="1400"
                         data-ease="easeOutBack">
                         INCREDIBLE
                     </h3>
-                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:450px; top:290px"
+                    <h3 class="ms-layer ms-promo-info-in color-darker" style="left:520px; top:290px;color:#ffffff;"
                         data-effect="left(40)"
                         data-duration="2300"
                         data-delay="1400"
@@ -571,7 +420,7 @@
         <!--- End Content --->
         <!-- Owl Clients v1 -->
         <div class="container content-sm">
-            <div class="headline"><h2>เครือข่าย สค.</h2></div>
+            <div class="headline"><h2>เครือข่าย สค. ภายใน</h2></div>
             <div class="owl-clients-v1">
                 <div class="item">
                     <a href="@Url.Content("~")"><img src="~/assets/img/clients4/logo1.jpg" style="border-radius:8px;" alt="" width="100%"></a>
@@ -787,6 +636,24 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(gcse, s);
           })();
+
+
+          $(document).ready(function () {
+
+              $("#mFontS").click(function () {
+                  $("html body").css({ 'font-size': '1.5em' });
+              });
+
+              $("#mFontM").click(function () {
+                  $("html body").css({ 'font-size': '2.0em' });
+              });
+
+              $("#mFontL").click(function () {
+                  $("html body").css({ 'font-size': '2.5em' });
+              });
+
+          });
+          
 
     </script>  
     <script src="~/assets/plugins/respond.js"></script>
