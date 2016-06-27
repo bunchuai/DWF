@@ -23,8 +23,20 @@ namespace www.dwf.go.th.Controllers
             return View();
         }
 
-        // ถาม-ตอบ
+        // กระดานถาม-ตอบ
         public IActionResult QA()
+        {
+            return View();
+        }
+
+        // รายละเอียดกระดานถาม-ตอบ
+        public IActionResult QA_Detail()
+        {
+            return View();
+        }
+
+        // สร้างกระดานถาม-ตอบ
+        public IActionResult Create_QA()
         {
             return View();
         }
