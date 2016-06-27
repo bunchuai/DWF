@@ -13,16 +13,16 @@ a {
 a:focus,
 a:hover,
 a:active {
-	color: #18ba9b;
+	color: #cf0077;
 }
 .color-green {
-	color: #6f0749;
+	color: #cf0077;
 }
 a.read-more:hover {
-	color:#6f0749;
+	color:#cf0077;
 }
 .linked:hover {
-	color:#6f0749;
+	color:#cf0077;
 }
 
 /* Headers Default
