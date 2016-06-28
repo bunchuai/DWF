@@ -54,9 +54,17 @@ body.header-fixed-space-default {
 .header .topbar ul.loginbar > li > a,
 .header .topbar ul.loginbar > li > a:hover {
 	color: #7c8082;
-	font-size: 16px;
+	font-size: 1.0em;
 	text-transform: uppercase;
 }
+
+@media (max-width: 420px) {
+    .header .topbar ul.loginbar > li > a,
+.header .topbar ul.loginbar > li > a:hover {
+	font-size: 0.9em;
+}
+}
+
 
 .header .topbar ul.loginbar li i.fa {
 	color: #bbb;
@@ -107,7 +115,7 @@ body.header-fixed-space-default {
 .header .topbar ul.languages li a {
 	color: #555;
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	padding: 2px 12px;
 	margin-bottom: 1px;
 	text-transform: uppercase;
@@ -168,15 +176,38 @@ body.header-fixed-space-default {
 	height: 100%;
 	min-height: 40px;
 	min-width: 100px;
-	display: table-cell;
+	/* display: table-cell; */
 	vertical-align: middle;
+   
 }
 
 .header .logo img {
 	z-index: 1;
-	margin: 20px 0;
+    margin-top:-10px;
+    margin-bottom:20px;
 	position: relative;
 }
+
+@media (max-width: 420px) {
+    .header .logo img {
+    margin-bottom:0px;
+}
+}
+
+
+.logo2{
+   display: none;
+}
+
+@media (max-width: 420px) {
+    .logo1{
+   display: none;
+}
+    .logo2{
+   display: block;
+}
+}
+
 
 /*Big Logo Style*/
 @media (max-width: 1200px) {
@@ -230,7 +261,7 @@ body.header-fixed-space-default {
 /*Navbar Menu*/
 .header .navbar-nav > li > a {
 	color: #687074;
-	font-size: 16px;
+	font-size: 1.2em;
 	font-weight:400;
 	text-transform: uppercase;
 }
@@ -447,7 +478,7 @@ body.header-fixed-space-default {
 
 	.header .dropdown-menu li a {
 		color: #687074;
-		font-size: 13px;
+		font-size: 1.0em;
 		font-weight: 400;
 		padding: 6px 15px;
 		border-bottom: solid 1px #eee;
@@ -960,6 +991,7 @@ body.header-fixed-space-default {
 		background: #202020 !important;
 	}
 }
+
 
 /*Search*/
 .header.header-dark  .nav > li > .search {
