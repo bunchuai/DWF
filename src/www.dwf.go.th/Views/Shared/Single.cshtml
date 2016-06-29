@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="~/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
     <link rel="stylesheet" href="~/assets/css/pages/profile.css">
     <!-- CSS Theme -->
-    <link rel="stylesheet" href="~/assets/css/theme-colors/color-refault.css" id="style_color">
+    <link rel="stylesheet" href="~/assets/css/theme-colors/color-default.css" id="style_color">
     <link rel="stylesheet" href="~/assets/css/theme-skins/dark.css">
     <link rel="stylesheet" href="~/assets/plugins/scrollbar/css/jquery.mCustomScrollbar.css">
     <!-- CSS Customization -->
@@ -55,9 +55,43 @@
         <!--=== Header ===-->
         <div class="header">
             <div class="container">
+                <!-- Topbar -->
+                <div class="topbar">
+                    <ul class="loginbar pull-right">
+                        <li class="hoverSelector">
+                            <i class="fa fa-globe"></i>
+                            <a>ร้องทุกข์ร้องเรียน</a>
+                            <ul class="languages hoverSelectorBlock">
+                                <li><a href="#">ร้องทุกข์</a></li>
+                                <li><a href="#">ร้องเรียน</a></li>
+                                <li><a href="#">สอบถามข้อมูล</a></li>
+                            </ul>
+                        </li>
+                        <li class="topbar-devider"></li>
+                        <li class="hoverSelector">
+                            <i class="fa fa-globe"></i>
+                            <a>ภาษา</a>
+                            <ul class="languages hoverSelectorBlock">
+                                <li class="active"><a href="#">ไทย<i class="fa fa-check"></i></a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </li>
+                        <li class="topbar-devider"></li>
+                        <li class="hoverSelector">
+                            <i class="fa  fa-font"></i>
+                            <a>ตัวอักษร</a>
+                            <ul class="languages hoverSelectorBlock">
+                                <li class="active"><a href="javascript:void(0)" id="mFontS" style="font-size:16px">ปกติ</a></li>
+                                <li><a href="javascript:void(0)" id="mFontM" style="font-size:20px">ใหญ่</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Topbar -->
                 <!-- Logo -->
                 <a class="logo" href="@Url.Content("~/")">
-                    <img src="~/assets/img/logo3.png" class="img-responsive" alt="กรมกิจการสตรีและสถาบันครอบครัว"  style="margin:10px;">
+                    <img src="~/assets/img/logo.png" class="logo1 img-responsive" alt="กรมกิจการสตรีและสถาบันครอบครัว">
+                    <img src="~/assets/img/logo2.png" class="logo2 img-responsive" alt="กรมกิจการสตรีและสถาบันครอบครัว">
                 </a>
                 <!-- End Logo -->
                 <!-- Topbar -->
@@ -129,30 +163,6 @@
                     </div>
                 </div>
                 <!---- End switcher ---->
-
-                <div class="topbar">
-                    <ul class="loginbar pull-right">
-                        <li class="hoverSelector">
-                            <i class="fa fa-globe"></i>
-                            <a>ภาษา</a>
-                            <ul class="languages hoverSelectorBlock">
-                                <li class="active"><a href="#">ไทย <i class="fa fa-check"></i></a></li>
-                                <li><a href="#">English</a></li>
-                            </ul>
-                        </li>
-                        <li class="topbar-devider"></li>
-                        <li class="hoverSelector">
-                            <i class="fa  fa-font"></i>
-                            <a>ขนาดตัวอักษร</a>
-                            <ul class="languages hoverSelectorBlock">
-                                <li class="active"><a href="javascript:void(0)" id="mFontS"> <i class="fa fa-check"></i> ปกติ </a></li>
-                                <li><a href="javascript:void(0)" id="mFontM">กลาง</a></li>
-                                <li><a href="javascript:void(0)" id="mFontL">ใหญ่</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Topbar -->
                 <!-- Toggle get grouped for better mobile display -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -204,7 +214,6 @@
                             </ul>
                         </li>
                         <!-- End ข้อมูล CIO -->
-                        
                         <!-- Blog -->
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
@@ -245,7 +254,6 @@
                             </ul>
                         </li>
                         <!-- End Blog -->
-
                         <!-- Contact -->
                         <li class="dropdown">
                             <a href="Javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
@@ -256,23 +264,22 @@
                                 <li>
                                     <a href="@Url.Content("Contact/center")"><i class="fa   fa-angle-right"></i> ส่วนกลาง</a>
                                     <a href="@Url.Content("Contact/region")"><i class="fa   fa-angle-right"></i> ส่วนภูมิภาค</a>
-                                    <a href="@Url.Content("Contact/qa")"><i class="fa   fa-angle-right"></i> ถาม-ตอบ</a>
-                                    <a href="@Url.Content("Contact/faq")"><i class="fa   fa-angle-right"></i> คำถามที่พบบ่อย</a>
+                                    <a href="@Url.Content("Contact/qa")"><i class="fa   fa-angle-right"></i> ถาม-ตอบ(Q-A)</a>
+                                    <a href="@Url.Content("Contact/faq")"><i class="fa   fa-angle-right"></i> คำถามที่พบบ่อย(FAQ)</a>
                                 </li>
                             </ul>
                         </li>
                         <!-- End Contact -->
-                       
                         <!-- Search Block -->
                         <li>
                             <i class="search fa fa-search search-btn"></i>
                             <div class="search-open">
                                 <div class="input-group animated fadeInDown">
-                                   <input type="text" class="form-control" id="customSearchText" autocomplete="off"  placeholder="Search">
+                                    <input type="text" class="form-control" id="customSearchText" autocomplete="off" placeholder="Search">
                                     <span class="input-group-btn">
                                         <input type="button" class="btn-u" id="customSearch" value="Go" data-toggle="modal" data-target=".bs-example-modal-lg">
                                     </span>
-                                 </div>
+                                </div>
                             </div>
                         </li>
                         <!-- End Search Block -->
