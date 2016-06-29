@@ -11,9 +11,16 @@ namespace www.dwf.go.th.Controllers
     public class News : Controller
     {
         // GET: /<controller>/
+        // ข่าวประชาสัมพันธ์
         public IActionResult Public_News()
         {
             return View("Public_News/Public_News");
+        }
+
+        // เรื่องเด่นประเด็นร้อน
+        public IActionResult Hotnews()
+        {
+            return View("Hotnews/Hotnews");
         }
     }
 }
