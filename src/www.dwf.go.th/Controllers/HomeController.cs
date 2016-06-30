@@ -8,6 +8,7 @@ namespace www.dwf.go.th.Controllers
 {
     public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
             return View();
@@ -27,6 +28,7 @@ namespace www.dwf.go.th.Controllers
         public IActionResult AjaxVideo(string link)
         {
             string html = "";
+            link = "";
             if(link == "")
             {
                 html += "<span>---- Can't play this video ----</span>";

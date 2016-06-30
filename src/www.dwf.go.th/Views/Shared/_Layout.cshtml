@@ -186,16 +186,28 @@
                                 เกี่ยวกับ สค.
                             </a>
                             <ul class="dropdown-menu">
-                                <!-- About Pages -->
-                                <li>
-                                    <a href="@Url.Content("~/announce/purchase/purchase")"><i class="fa fa-dot-circle-o"></i> จัดซื้อจัดจ้าง</a>
-                                    <a href="@Url.Content("~/announce")"><i class="fa fa-dot-circle-o"></i> สมัครงาน</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> ทั่วไป</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> นิติการ</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> ประกาศราคากลาง สค.</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> สรุปผลการจัดซื้อจัดจ้าง สค.</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> Evening Brief</a>
-                                    <a href="javascript:void(0);"><i class="fa fa-dot-circle-o"></i> ประกาศราคากลาง</a>
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);"> เกี่ยวกับหน่วยงาน</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0);"> ประวัติความเป็นมา</a></li>
+                                        <li><a href="javascript:void(0);"> วิสัยทัศน์ พันธกิจ</a></li>
+                                        <li><a href="javascript:void(0);"> โครงสร้างองค์กร ผู้บริหาร อำราจหน้าที่</a></li>
+                                        <li><a href="javascript:void(0);"> ภารกิจและหน้าที่รับผิดชอบของหน่วยงาน</a></li>
+                                        <li><a href="javascript:void(0);"> ยุทธศาสตร์และแผนงาน แผนปฏิบัติราชการ</a></li>
+                                        <li><a href="javascript:void(0);"> คำรองและรายงานผลการปฏิบัติราชการ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="javascript:void(0);"> ทั่วไป</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="javascript:void(0);"> จัดซื้อจัดจ้าง</a></li>
+                                        <li><a href="javascript:void(0);"> ประกาศราคากลาง สค.</a></li>
+                                        <li><a href="javascript:void(0);"> สรุปผลการจัดซื้อจัดจ้าง สค.</a></li>
+                                        <li><a href="javascript:void(0);"> สมัครงาน</a></li>
+                                        <li><a href="javascript:void(0);"> ทั่วไป</a></li>
+                                        <li><a href="javascript:void(0);"> นิติการ</a></li>
+                                        <li><a href="javascript:void(0);"> ประกาศราคากลาง</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -230,7 +242,6 @@
                             </ul>
                         </li>
                         <!-- End Blog -->
-
                         <!-- Contact -->
                         <li class="dropdown">
                             <a href="Javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
@@ -239,10 +250,10 @@
                             <ul class="dropdown-menu">
                                 <!-- ติดต่อ สค. -->
                                 <li>
-                                    <a href="@Url.Content("Contact/center")"><i class="fa   fa-angle-right"></i> ส่วนกลาง</a>
-                                    <a href="@Url.Content("Contact/region")"><i class="fa   fa-angle-right"></i> ส่วนภูมิภาค</a>
-                                    <a href="@Url.Content("Contact/qa")"><i class="fa   fa-angle-right"></i> ถาม-ตอบ(Q-A)</a>
-                                    <a href="@Url.Content("Contact/faq")"><i class="fa   fa-angle-right"></i> คำถามที่พบบ่อย(FAQ)</a>
+                                    <a href="@Url.Content("Contact/center")"><i class="fa  fa-angle-right"></i> ส่วนกลาง</a>
+                                    <a href="@Url.Content("Contact/region")"><i class="fa  fa-angle-right"></i> ส่วนภูมิภาค</a>
+                                    <a href="@Url.Content("Contact/qa")"><i class="fa  fa-angle-right"></i> ถาม-ตอบ(Q-A)</a>
+                                    <a href="@Url.Content("Contact/faq")"><i class="fa  fa-angle-right"></i> คำถามที่พบบ่อย(FAQ)</a>
                                 </li>
                             </ul>
                         </li>
@@ -362,7 +373,6 @@
                         <div class="col-md-6">
                             <p>
                                 @DateTime.Now.Year.ToString() &copy; All Rights Reserved.
-                                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
                             </p>
                         </div>
                         <!-- Social Links -->
@@ -454,11 +464,6 @@
 			MSfullWidth.initMSfullWidth();
             App.initScrollBar();
 		});
-    </script>
-
-    <script>
-            
-
 
           $(document).ready(function () {
 

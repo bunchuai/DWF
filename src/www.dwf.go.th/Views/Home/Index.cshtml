@@ -350,7 +350,9 @@
             </div>
         </div>
     </div>
-    
+    <!--- end --->    
+
+
     <!-- ประกาศ -->
     <div class="container">
         <div class="row">
@@ -422,7 +424,7 @@
             <!-- End Orange Panel -->
         </div>
     </div>    
-
+    <!-- end  -->
 
     <!-- clip video -->
     <div class="bg-color" style="background:#cf0077;">
@@ -920,7 +922,27 @@
             </div>
         </div>
     </div>
-    
+
+
+<!-- ประกาศต่าง สร้างเป็น modal -->
+<div class="modal fade announce" tabindex="-1" id="announce" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="myLargeModalLabel2" class="modal-title"><span class="glyphicon glyphicon-volume-up"></span> ขอพระองค์ทรงพระเจริญ</h4>
+            </div>
+            <div class="modal-body">
+                <img src="~/assets/img/0clip_4.jpg" width="100%" alt="" title="">
+                <button class="btn rounded btn-info margin-top-20" type="button">ดูรายละเอียด</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------->
+    @{
+        int activeModal = 0;
+     }
     
     @section Scripts{
         <script type="text/javascript" src="~/assets/plugins/scrollbar/js/jquery.mCustomScrollbar.concat.min.js"></script>
@@ -956,21 +978,25 @@
 
             /* set video player */
             $(document).ready(function () {
+                /* active modal */
+                var activeModal = @activeModal; // Code asp.net mvc
+                if (activeModal == 1) {
+                    $('.modal.fade.announce').modal();
+                }
                 /* default video */
                 var video = '<iframe width="653" height="332" src="https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
                 $("#video-container").html(video);
             });
 
-            function FnPlayVideo(link) {
-                if (link == "") {
-                    link = "https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0";
-                }
-                var url = '@Url.Content("Home/AjaxVideo")';
+                    function FnPlayVideo(link) {
+                        if (link == "") {
+                            link = "https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0";
+                        }
+                        var url = '@Url.Content("Home/AjaxVideo")';
                 $.get(url, { "link": link }, function (rs) {
                     $("#video-container").html(rs);
-                });
-            }
-
+                        });
+                    }
         </script>
     }
 
