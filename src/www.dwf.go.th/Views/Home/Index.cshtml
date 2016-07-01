@@ -933,7 +933,19 @@
                 <h4 id="myLargeModalLabel2" class="modal-title"><span class="glyphicon glyphicon-volume-up"></span> ขอพระองค์ทรงพระเจริญ</h4>
             </div>
             <div class="modal-body">
-                <img src="~/assets/img/0clip_4.jpg" width="100%" alt="" title="">
+                @{
+                    int displayStyle = 1;
+                    if (displayStyle == 1)
+                    {
+                        <img src="~/assets/img/0clip_4.jpg" width="100%" alt="" title="">
+                    }
+                    else
+                    {
+                        <iframe width="100%" height="460" src="https://www.youtube.com/embed/Bs9sFgfL79Y?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    }
+                }
+                
+                
                 <button class="btn rounded btn-info margin-top-20" type="button">ดูรายละเอียด</button>
             </div>
         </div>
@@ -984,19 +996,21 @@
                     $('.modal.fade.announce').modal();
                 }
                 /* default video */
-                var video = '<iframe width="653" height="332" src="https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+                var urlYoutube = "https://www.youtube.com/embed/Bs9sFgfL79Y?rel=0&amp;showinfo=0";
+                var video = '<iframe width="653" height="332" src='+urlYoutube+'frameborder="0" allowfullscreen></iframe>';
                 $("#video-container").html(video);
             });
 
-                    function FnPlayVideo(link) {
-                        if (link == "") {
-                            link = "https://www.youtube.com/embed/t-qA18UtdxE?rel=0&amp;showinfo=0";
-                        }
-                        var url = '@Url.Content("Home/AjaxVideo")';
+
+            function FnPlayVideo(link) {
+                if (link == "") {
+                    link = "https://www.youtube.com/embed/Bs9sFgfL79Y?rel=0&amp;showinfo=0";
+                }
+                var url = '@Url.Content("Home/AjaxVideo")';
                 $.get(url, { "link": link }, function (rs) {
                     $("#video-container").html(rs);
-                        });
-                    }
+                });
+            }       
         </script>
     }
 
