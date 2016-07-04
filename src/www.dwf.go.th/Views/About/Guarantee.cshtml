@@ -1,29 +1,40 @@
 ﻿@{
     ViewData["Title"] = "กรมกิจการสตรีและสถาบันครอบครัว";
 }
+<div class="breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">คำรับรองการปฏิบัติราชการ</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="Home/index"><i class="fa fa-home"></i> หน้าหลัก</a></li>
+            <li class="active">ประวัติความเป็นมา</li>
+        </ul>
+    </div>
+</div>
 <!--=== Content Part ===-->
 <div class="container content">
     <div class="row">
         <div class="shadow-wrapper">
-            <div class="tag-box tag-box-v2 box-shadow shadow-effect-1">
+            <div class="tag-box tag-box-v1 box-shadow shadow-effect-1">
                 <div class="heading heading-v5">
                     <h2>คำรับรองการปฏิบัติราชการ</h2>
                 </div>
                 <div class="row">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-10">
-                        @{
-                            for (int count = 1; count <= 5; count++)
-                            {
-                                <li><i class="fa fa-angle-right color-green"></i> <a href="#">คำรับรองการปฎิบัติราชการปี 2559</a></li>
+                        <ul class="list-unstyled lists-v1">
+                            @{
+                                for (int count = 1; count <= 5; count++)
+                                {
+                                    <li><i class="fa fa-angle-right color-green"></i> <a href="#">คำรับรองการปฎิบัติราชการปี 2559</a></li>
+                                }
                             }
-                        }
-                        @{
-                            for (int count = 1; count <= 5; count++)
-                            {
-                                <li><i class="fa fa-angle-right color-green"></i> <a href="#">คะแนนการประเมินผลการปฎิบัติราชการประจำปีงบประมาณ พ.ศ.2548</a></li>
+                            @{
+                                for (int count = 1; count <= 5; count++)
+                                {
+                                    <li><i class="fa fa-angle-right color-green"></i> <a href="#">คะแนนการประเมินผลการปฎิบัติราชการประจำปีงบประมาณ พ.ศ.2548</a></li>
+                                }
                             }
-                        }
+                        </ul>
                     </div>
                 </div>
             </div>
