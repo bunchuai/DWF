@@ -41,6 +41,12 @@ namespace www.dwf.go.th.Controllers
             return View();
         }
 
+        // รายละเอียดกระดานถาม-ตอบ แบบที่2
+        public IActionResult QA_Detail2()
+        {
+            return View();
+        }
+
         // คำถามที่พบบ่อย
         public IActionResult FAQ()
         {
