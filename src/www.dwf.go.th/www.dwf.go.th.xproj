@@ -21,5 +21,13 @@
     <DnxInvisibleContent Include="package.json" />
     <DnxInvisibleContent Include=".npmrc" />
   </ItemGroup>
+  <ItemGroup>
+    <DnxInvisibleCompile Include="Controllers\HomeController1.cs" />
+    <DnxInvisibleCompile Include="Controllers\PF01.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <DnxInvisibleFolder Include="Views\CIO\Director\" />
+    <DnxInvisibleFolder Include="Views\NewFolder\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\DotNet.Web\Microsoft.DotNet.Web.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
