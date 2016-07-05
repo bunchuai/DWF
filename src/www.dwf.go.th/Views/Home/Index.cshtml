@@ -528,7 +528,7 @@
                                             </div>
                                         </div>
                                         <!-- end Blog Thumb -->
-                                        <a class="btn rounded btn-success" href="@Url.Content("~/Media/media")">
+                                        <a class="btn rounded btn-success" href="@Url.Content("~/Media/media")" style="margin-bottom:20px;">
                                             <span aria-hidden="true" class="icon-action-redo"></span> ดูคลิปวิดีโอทั้งหมด
                                         </a>
                                         <br>
@@ -742,16 +742,17 @@
                     </div>
                     <div class="panel-body">
                         <h5>ความพึงพอใจในการใช้บริการบนเว็บไซต์กรมกิจการสตรีและสถาบันครอบครัว</h5>
-                        <p class="padding-left-40">
-                            <input type="radio" name="ratio" value="5"> มากที่สุด <br />
-                            <input type="radio" name="ratio" value="4"> มาก <br />
-                            <input type="radio" name="ratio" value="3"> ปานกลาง <br />
-                            <input type="radio" name="ratio" value="2"> น้อย <br />
-                            <input type="radio" name="ratio" value="1"> น้อยที่สุด <br />
-                        <p class="margin-bottom-25">
-                            <input type="button" class="btn btn-success" value="โหวต">
-                        </p>
-                        </p>
+                        <form asp-action="" asp-controller="" method="post">
+                            <p class="padding-left-60">
+                                <input type="radio" name="ratio" value="5"> มากที่สุด <br />
+                                <input type="radio" name="ratio" value="4"> มาก <br />
+                                <input type="radio" name="ratio" value="3"> ปานกลาง <br />
+                                <input type="radio" name="ratio" value="2"> น้อย <br />
+                                <input type="radio" name="ratio" value="1"> น้อยที่สุด <br />
+                            <p class="margin-bottom-25">
+                                <input type="button" class="btn btn-success" value="โหวต">
+                            </p>   
+                        </form>
                     </div>
                 </div>
                 <!-- End Yellow Panel -->

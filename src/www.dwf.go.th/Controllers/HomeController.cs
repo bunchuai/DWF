@@ -27,21 +27,17 @@ namespace www.dwf.go.th.Controllers
         [HttpGet]
         public IActionResult AjaxVideo(string link)
         {
+
+            string Ex = "Has error!";
             try
             {
                 string html = "";
-                if (link == "")
-                {
-                    html += "<span style='color:#FFFFFF;'>---- Can't play this video ----</span>";
-                }
-                else
-                {
-                    html += "<iframe width='653' height='332' src='" + link + "&autoplay=1' frameborder='0' allowfullscreen></iframe>";
-                }
+                html += "<iframe width='653' height='332' src='" + link + "&autoplay=1' frameborder='0' allowfullscreen></iframe>";
                 return Json(html);
             }
             catch (Exception ex) {
-                return View("Error");
+
+                return View(ex);
             }
         }
 
