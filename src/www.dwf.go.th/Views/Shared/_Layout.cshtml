@@ -85,10 +85,10 @@
                             <a>ตัวอักษร</a>
                             <ul class="languages hoverSelectorBlock">
                                 <li class="active">
-                                    <a href="javascript:void(0)" style="font-size:14px;" onclick="upFont(14)">ปกติ</a>
+                                    <a href="javascript:void(0)" id="nomal" style="font-size:14px;" onclick="upFont(14)">ปกติ</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)" style="font-size:18px;" onclick="upFont(18)">ใหญ่</a>
+                                    <a href="javascript:void(0)" id="median" style="font-size:18px;" onclick="upFont(18)">ใหญ่</a>
                                 </li>
                             </ul>
                         </li>
@@ -436,8 +436,8 @@
     <script type="text/javascript" src="~/assets/plugins/image-hover/js/modernizr.js"></script>
     <script type="text/javascript" src="~/assets/plugins/image-hover/js/touch.js"></script>
     <script type="text/javascript" src="~/assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/forms/login.js"></script>
-    <script type="text/javascript" src="assets/js/forms/contact.js"></script>
+    <script type="text/javascript" src="~/assets/js/forms/login.js"></script>
+    <script type="text/javascript" src="~/assets/js/forms/contact.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/fancy-box.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/owl-carousel.js"></script>
     <script type="text/javascript" src="~/assets/js/plugins/style-switcher.js"></script>
@@ -456,8 +456,9 @@
 
         function upFont(size) {
             if (!size) {
-                size = 14;
-            } 
+                size == 14;
+            }
+
             jQuery('body').css('font-size', size + 'px');
         }
     </script>  
