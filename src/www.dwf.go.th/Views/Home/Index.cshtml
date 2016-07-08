@@ -463,7 +463,7 @@
                                         </div><br>
                                         <!-- End Blog Grid -->
                                     </div>
-                                    <div class="col-sm-5">
+                                    <div class="col-sm-5" style='overflow:auto;height:512px;'>
                                         <!-- Blog Thumb -->
                                         <div class="blog-thumb margin-bottom-20" style="padding:10px; background-color:#f7f7f7;">
                                             <div class="blog-thumb-hover">
@@ -529,11 +529,28 @@
                                             </div>
                                         </div>
                                         <!-- end Blog Thumb -->
-                                        <a class="btn rounded btn-success" href="@Url.Content("~/Media/media")" style="margin-bottom:20px;">
-                                            <span aria-hidden="true" class="icon-action-redo"></span> ดูคลิปวิดีโอทั้งหมด
-                                        </a>
-                                        <br>
+                                        <!-- Blog Thumb -->
+                                        <div class="blog-thumb margin-bottom-20" style="padding:10px; background-color:#f7f7f7;">
+                                            <div class="blog-thumb-hover">
+                                                <img src="~/assets/img/sk3.jpg" alt="">
+                                            </div>
+                                            <div class="blog-thumb-desc">
+                                                <a href="Javascript:void(0)" onclick="FnPlayVideo('https://www.youtube.com/embed/b_jDY36BFxs?rel=0&amp;showinfo=0')">
+                                                    <span aria-hidden="true" class="icon-social-youtube"></span> บ่ายวันนี้ (พ.1 มิ.ย. 59) เวลา 14.30 น. อธิบดีกรมกิจการสตรีและสถาบันครอบครัว (นายเลิศปัญญา บูรณบัณฑิต)
+                                                </a>
+                                                <ul class="blog-thumb-info">
+                                                    <li>@DateTime.Now.ToString("yyyy/MM/dd")</li>
+                                                    <li><a href="#"><i class="fa fa-comments"></i> Admin</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- end Blog Thumb -->
+                                        
                                     </div>
+                                    <a class="btn rounded btn-success" href="@Url.Content("~/Media/media")" style="margin-bottom:20px;margin-left:16px;">
+                                        <span aria-hidden="true" class="icon-action-redo"></span> ดูคลิปวิดีโอทั้งหมด
+                                    </a>
+                                    <br>
                                 </div><!--/end row-->
                             </div>
                         </div>
